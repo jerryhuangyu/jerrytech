@@ -30,4 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-p {
+    @apply text-wrap text-sm font-light leading-relaxed tracking-wide text-[#AAAAAA];
+  }
+  .section-wrap {
+    @apply md:max-w-3xl mx-6 my-4;
+  }
 }
