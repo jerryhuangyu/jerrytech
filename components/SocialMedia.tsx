@@ -8,7 +8,7 @@ type SocialMediaProps = {
 
 const SocialMedia = ({ link }: SocialMediaProps) => {
   return (
-    <li className="cursor-pointer">
+    <li className="cursor-pointer" title={link.name}>
       <Link href={link.to}>
         <Image
           className="invert"
