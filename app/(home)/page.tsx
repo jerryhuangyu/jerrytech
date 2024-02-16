@@ -1,10 +1,4 @@
-import {
-  Skillset,
-  Projects,
-  Hero,
-  Experience,
-  About,
-} from "@/components/sections";
+import { Skillset, Projects, Hero, Experience, About } from "@/sections";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
-import SectionTitle from "../SectionTitle";
-import SkillBadge from "../SkillBadge";
+import SectionTitle from "@/components/SectionTitle";
+import SkillBadge from "@/components/SkillBadge";
 import { skills } from "@/constants";
 
 const Skillset = () => {
