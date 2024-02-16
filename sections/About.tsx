@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="section-wrap">
       <SectionTitle title="About" />
-      <p className="text-p">
+      <p className="text text-secondary text-sm">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
         libero officia eveniet id. Ab iusto dolor minus repudiandae laudantium
         fuga sit odio vitae unde, deserunt perferendis culpa at quos, architecto
