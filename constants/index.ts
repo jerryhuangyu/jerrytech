@@ -43,7 +43,7 @@ export const SocialMediaLinks: SocialMediaLink[] = [
   {
     name: "mail",
     icon: gmail,
-    to: "http://localhost:3000/",
+    to: "mailto:jerryhuang19628@gmail.com",
   },
   {
     name: "instagram",
