@@ -1,10 +1,7 @@
 import Image from "next/image";
+import { BasicLink } from "@/types";
 
-type IconLinkProps = {
-  icon: string;
-  name: string;
-  to: string;
-};
+type IconLinkProps = BasicLink;
 
 const IconLink = ({ icon, name, to }: IconLinkProps) => {
   return (

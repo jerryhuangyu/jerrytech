@@ -1,4 +1,4 @@
-import SocialMedia from "@/components/SocialMedia";
+import IconLink from "@/components/IconLink";
 import { SocialMediaLinks } from "@/constants";
 
 const Footer = () => {
@@ -12,7 +12,9 @@ const Footer = () => {
           </span>
           <ul className="mb-6 flex flex-wrap items-center gap-3 brightness-50 sm:mb-0">
             {SocialMediaLinks.map((link) => (
-              <SocialMedia link={link} key={link.name} />
+              <li key={link.name}>
+                <IconLink name={link.name} icon={link.icon} to={link.to} />
+              </li>
             ))}
           </ul>
         </div>
