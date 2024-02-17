@@ -38,7 +38,7 @@ export const SocialMediaLinks: SocialMediaLink[] = [
   {
     name: "linkedin",
     icon: linkedin,
-    to: "http://localhost:3000/",
+    to: "https://www.linkedin.com/in/jerryhuangyu/",
   },
   {
     name: "mail",
@@ -48,11 +48,11 @@ export const SocialMediaLinks: SocialMediaLink[] = [
   {
     name: "instagram",
     icon: ig,
-    to: "http://localhost:3000/",
+    to: "https://www.instagram.com/boyu4082/",
   },
   {
     name: "github",
     icon: github,
-    to: "http://localhost:3000/",
+    to: "https://github.com/jerryhuangyu",
   },
 ];

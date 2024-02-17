@@ -1,6 +1,5 @@
 import { SocialMediaLink } from "@/types";
 import Image from "next/image";
-import Link from "next/link";
 
 type SocialMediaProps = {
   link: SocialMediaLink;
@@ -9,7 +8,7 @@ type SocialMediaProps = {
 const SocialMedia = ({ link }: SocialMediaProps) => {
   return (
     <li className="cursor-pointer" title={link.name}>
-      <Link href={link.to}>
+      <a href={link.to} target="_blank">
         <Image
           className="invert"
           src={link.icon}
@@ -17,7 +16,7 @@ const SocialMedia = ({ link }: SocialMediaProps) => {
           height={20}
           width={20}
         />
-      </Link>
+      </a>
     </li>
   );
 };
