@@ -84,4 +84,10 @@ export const projectCards: Card[] = [
     demo: "https://www.instagram.com/boyu4082/",
     source: "https://github.com/jerryhuangyu",
   },
+  {
+    name: "Tic Tac EMOJI",
+    skills: ["Zustand", "React", "TypeScript", "Framer Motion"],
+    demo: "https://www.instagram.com/boyu4082/",
+    source: "https://github.com/jerryhuangyu",
+  },
 ];
