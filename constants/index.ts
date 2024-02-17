@@ -2,7 +2,7 @@ import gmail from "@/images/gmail.svg";
 import github from "@/images/github.svg";
 import ig from "@/images/ig.svg";
 import linkedin from "@/images/linkedin.svg";
-import { Card, SocialMediaLink } from "@/types";
+import { Card, BasicLink } from "@/types";
 
 export const skills = [
   "React",
@@ -13,6 +13,8 @@ export const skills = [
   "CSS",
   "Tailwindcss",
   "Git",
+  "Github",
+  "Redux",
   "Framer-Motion",
   "Supabase",
 ];
@@ -34,7 +36,7 @@ export const experiences = [
   },
 ];
 
-export const SocialMediaLinks: SocialMediaLink[] = [
+export const SocialMediaLinks: BasicLink[] = [
   {
     name: "linkedin",
     icon: linkedin,
