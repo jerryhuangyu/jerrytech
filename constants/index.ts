@@ -2,7 +2,7 @@ import gmail from "@/images/gmail.svg";
 import github from "@/images/github.svg";
 import ig from "@/images/ig.svg";
 import linkedin from "@/images/linkedin.svg";
-import { SocialMediaLink } from "@/types";
+import { Card, SocialMediaLink } from "@/types";
 
 export const skills = [
   "React",
@@ -54,5 +54,32 @@ export const SocialMediaLinks: SocialMediaLink[] = [
     name: "github",
     icon: github,
     to: "https://github.com/jerryhuangyu",
+  },
+];
+
+export const projectCards: Card[] = [
+  {
+    name: "Tic Tac EMOJI",
+    skills: ["Zustand", "React", "TypeScript", "Framer Motion"],
+    demo: "https://www.instagram.com/boyu4082/",
+    source: "https://github.com/jerryhuangyu",
+  },
+  {
+    name: "Tic Tac EMOJI",
+    skills: ["Zustand", "React", "TypeScript", "Framer Motion"],
+    demo: "https://www.instagram.com/boyu4082/",
+    source: "https://github.com/jerryhuangyu",
+  },
+  {
+    name: "Tic Tac EMOJI",
+    skills: ["Zustand", "React", "TypeScript", "Framer Motion"],
+    demo: "https://www.instagram.com/boyu4082/",
+    source: "https://github.com/jerryhuangyu",
+  },
+  {
+    name: "Tic Tac EMOJI",
+    skills: ["Zustand", "React", "TypeScript", "Framer Motion"],
+    demo: "https://www.instagram.com/boyu4082/",
+    source: "https://github.com/jerryhuangyu",
   },
 ];
