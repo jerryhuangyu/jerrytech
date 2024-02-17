@@ -5,3 +5,10 @@ export type SocialMediaLink = {
   icon: string | StaticImport;
   to: string;
 };
+
+export type Card = {
+  name: string;
+  skills: string[];
+  demo: string;
+  source: string;
+};
