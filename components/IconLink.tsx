@@ -5,7 +5,12 @@ type IconLinkProps = BasicLink;
 
 const IconLink = ({ icon, name, to }: IconLinkProps) => {
   return (
-    <a href={to} target="_blank" className="cursor-pointer" title={name}>
+    <a
+      href={to}
+      target="_blank"
+      className="cursor-pointer brightness-[.6] hover:brightness-200"
+      title={name}
+    >
       <Image className="invert" src={icon} alt={name} height={20} width={20} />
     </a>
   );

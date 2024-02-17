@@ -10,7 +10,7 @@ const Footer = () => {
           <span className="text-secondary block text-sm font-extralight sm:text-center">
             © 2024 Jerry Huang
           </span>
-          <ul className="mb-6 flex flex-wrap items-center gap-3 brightness-50 sm:mb-0">
+          <ul className="mb-6 flex flex-wrap items-center gap-3 sm:mb-0">
             {SocialMediaLinks.map((link) => (
               <li key={link.name}>
                 <IconLink name={link.name} icon={link.icon} to={link.to} />
