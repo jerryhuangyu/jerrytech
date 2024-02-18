@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="section-wrap">
       <SectionTitle title="About" />
-      <p className="text text-secondary text-sm">{about}</p>
+      <p className="text text-secondary text-md">{about}</p>
     </div>
   );
 };
