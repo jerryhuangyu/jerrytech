@@ -16,7 +16,7 @@ const NavbarBtn = ({ to, name, icon }: NavbarBtnProps) => {
   return (
     <a
       href={to}
-      className={`my-[1.5px] flex cursor-pointer items-center gap-[6px] rounded-xl px-3 duration-300 ${toggleSection === section && "bg-zinc-600/60"}`}
+      className={`my-[1.5px] flex cursor-pointer items-center justify-center gap-[6px] rounded-xl py-1 pl-2 pr-3 duration-300 ${toggleSection === section && "bg-zinc-600/60"}`}
       onClick={() => (store.toggleSection = section as Section)}
     >
       <div className="brightness-75">{icon}</div>

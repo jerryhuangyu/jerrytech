@@ -6,7 +6,7 @@ import { MdOutlineCases } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-8 flex h-12 gap-1 rounded-2xl bg-zinc-800/70 bg-clip-padding px-3 py-[6px] backdrop-blur">
+    <div className="fixed top-8 grid grid-cols-2 rounded-2xl bg-zinc-800/70 bg-clip-padding px-3 py-[6px] backdrop-blur sm:h-12 sm:grid-cols-4 sm:gap-1">
       <NavbarBtn to="" name="Home" icon={<RiHome5Line />} />
       <NavbarBtn to="#about" name="About" icon={<PiLightbulb />} />
       <NavbarBtn to="#experience" name="Experience" icon={<BsSuitcase />} />
