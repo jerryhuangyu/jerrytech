@@ -1,7 +1,20 @@
 {
-  "extends": ["standard"],
+  "extends": ["standard", "plugin:react/recommended"],
+  "parser": "@typescript-eslint/parser",
   "rules": {
-    "max-len": [2, 250],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "react/no-unknown-property": "off",
+    "semi": [2, "always"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "max-len": [2, 400],
     "no-multiple-empty-lines": [
       "error",
       {

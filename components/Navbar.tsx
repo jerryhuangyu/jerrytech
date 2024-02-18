@@ -1,8 +1,8 @@
-import NavbarBtn from "@/components/NavbarBtn";
-import { RiHome5Line } from "react-icons/ri";
-import { PiLightbulb } from "react-icons/pi";
-import { BsSuitcase } from "react-icons/bs";
-import { MdOutlineCases } from "react-icons/md";
+import NavbarBtn from '@/components/NavbarBtn';
+import { RiHome5Line } from 'react-icons/ri';
+import { PiLightbulb } from 'react-icons/pi';
+import { BsSuitcase } from 'react-icons/bs';
+import { MdOutlineCases } from 'react-icons/md';
 
 const Navbar = () => {
   return (

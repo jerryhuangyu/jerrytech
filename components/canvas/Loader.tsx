@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { Html, useProgress } from "@react-three/drei";
+import { Html, useProgress } from '@react-three/drei';
 
 const Loader = () => {
   const { progress } = useProgress();
@@ -10,10 +10,10 @@ const Loader = () => {
       as="div"
       center
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
       }}
     >
       <span className="canvas-load"></span>
@@ -21,9 +21,9 @@ const Loader = () => {
       <p
         style={{
           fontSize: 14,
-          color: "#8497ad",
+          color: '#8497ad',
           fontWeight: 800,
-          marginTop: 40,
+          marginTop: 40
         }}
       >
         {progress.toFixed(2)}%

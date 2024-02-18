@@ -5,8 +5,8 @@ import {
   Experience,
   About,
   Footer,
-  Navbar,
-} from "@/sections";
+  Navbar
+} from '@/sections';
 
 export default function Home() {
   return (

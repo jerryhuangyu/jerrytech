@@ -1,4 +1,4 @@
-import SkillBadge from "@/components/SkillBadge";
+import SkillBadge from '@/components/SkillBadge';
 
 type ExperienceDetailProps = {
   timestamp: string;
@@ -11,7 +11,7 @@ const ExperienceDetail = ({
   timestamp,
   title,
   detail,
-  skills,
+  skills
 }: ExperienceDetailProps) => {
   return (
     <div className="flex flex-col sm:flex-row">
