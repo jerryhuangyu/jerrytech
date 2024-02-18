@@ -4,7 +4,7 @@ import { experiences } from "@/constants";
 
 const Experience = () => {
   return (
-    <div className="section-wrap">
+    <div className="section-wrap mb-4">
       <SectionTitle title="Experience" />
       <div className="flex flex-col gap-8">
         {experiences.map((ex) => (

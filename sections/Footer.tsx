@@ -7,7 +7,7 @@ const Footer = () => {
       <hr className="border-secondary my-3 opacity-25" />
       <div className="w-full p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-secondary block text-sm font-extralight sm:text-center">
+          <span className="text-secondary mb-3 block text-sm font-extralight sm:mb-0 sm:text-center">
             © 2024 Jerry Huang
           </span>
           <ul className="mb-6 flex flex-wrap items-center gap-3 sm:mb-0">
