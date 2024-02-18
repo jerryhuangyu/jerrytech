@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="flex h-screen items-center" id="home">
       <div className="mt-36 flex aspect-[2/1] w-screen flex-col justify-center">
         <div className="mx-auto flex flex-col items-center">
-          <h1 className="text-3xl xs:text-4xl md:text-7xl">
+          <h1 className="text-primary text-3xl xs:text-4xl md:text-7xl">
             Hello. I'm Jerry.
           </h1>
           <h1 className="text-3xl text-purple-400 xs:text-4xl md:text-7xl">

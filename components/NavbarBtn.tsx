@@ -23,8 +23,8 @@ const NavbarBtn = ({ to, name, icon }: NavbarBtnProps) => {
         router.push(to);
       }}
     >
-      <div className="brightness-75">{icon}</div>
-      <button className="select-none text-sm">{name}</button>
+      <div className="text-primary brightness-75">{icon}</div>
+      <button className="text-primary select-none text-sm">{name}</button>
     </span>
   );
 };
