@@ -1,7 +1,9 @@
+import HeroModelCanvas from "@/components/canvas/HeroModel";
+
 const Hero = () => {
   return (
     <div className="flex h-screen items-center">
-      <div className="flex aspect-[2/1] w-screen flex-col justify-center">
+      <div className="mt-36 flex aspect-[2/1] w-screen flex-col justify-center">
         <div className="mx-auto flex flex-col items-center">
           <h1 className="text-3xl xs:text-4xl md:text-7xl">
             Hello. I'm Jerry.
@@ -13,6 +15,9 @@ const Hero = () => {
             I'm passionate about creating experiences that are easy to use,
             accessible, and that meet the user's needs.
           </p>
+        </div>
+        <div className="mt-8 h-60">
+          <HeroModelCanvas />
         </div>
       </div>
     </div>
