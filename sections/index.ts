@@ -4,5 +4,6 @@ import Experience from "./Experience";
 import Projects from "./Projects";
 import Skillset from "./Skillset";
 import Footer from "./Footer";
+import Navbar from "@/components/Navbar";
 
-export { About, Hero, Experience, Projects, Skillset, Footer };
+export { About, Hero, Experience, Projects, Skillset, Footer, Navbar };

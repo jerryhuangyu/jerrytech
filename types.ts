@@ -12,3 +12,5 @@ export type Card = {
   demo: string;
   source: string;
 };
+
+export type Section = "" | "about" | "experience" | "project";
