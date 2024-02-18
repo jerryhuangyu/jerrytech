@@ -8,7 +8,7 @@ const Projects = () => {
       <SectionTitle title="Project" />
       <div className="flex flex-wrap gap-2">
         {projectCards.map((card) => (
-          <ProjectCard card={card} />
+          <ProjectCard card={card} key={card.name} />
         ))}
       </div>
     </div>
