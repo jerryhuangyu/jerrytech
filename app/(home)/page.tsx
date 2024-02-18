@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-around">
+    <main className="flex min-h-screen select-none flex-col items-center justify-around">
       <Navbar />
       <Hero />
       <About />
