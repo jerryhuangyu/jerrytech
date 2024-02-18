@@ -1,6 +1,7 @@
 "use client";
 
 import { useSnapshot } from "valtio";
+import { useRouter } from "next/navigation";
 import { store } from "@/store";
 import { Section } from "@/types";
 
@@ -12,16 +13,19 @@ type NavbarBtnProps = {
 
 const NavbarBtn = ({ to, name, icon }: NavbarBtnProps) => {
   const { toggleSection } = useSnapshot(store);
-  const section = name === "Home" ? "" : name.toLowerCase();
+  const section = name.toLowerCase();
+  const router = useRouter();
   return (
-    <a
-      href={to}
+    <span
       className={`my-[1.5px] flex cursor-pointer items-center justify-center gap-[6px] rounded-xl py-1 pl-2 pr-3 duration-300 ${toggleSection === section && "bg-zinc-600/60"}`}
-      onClick={() => (store.toggleSection = section as Section)}
+      onClick={() => {
+        store.toggleSection = section as Section;
+        router.push(to);
+      }}
     >
       <div className="brightness-75">{icon}</div>
       <button className="select-none text-sm">{name}</button>
-    </a>
+    </span>
   );
 };
 export default NavbarBtn;

@@ -13,4 +13,4 @@ export type Card = {
   source: string;
 };
 
-export type Section = "" | "about" | "experience" | "project";
+export type Section = "" | "home" | "about" | "experience" | "project";
