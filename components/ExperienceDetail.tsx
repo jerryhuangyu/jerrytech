@@ -14,7 +14,7 @@ const ExperienceDetail = ({
   skills,
 }: ExperienceDetailProps) => {
   return (
-    <div className="flex">
+    <div className="flex flex-col sm:flex-row">
       <h3 className="text text-secondary mr-6 min-w-40 text-sm">{timestamp}</h3>
       <div className="flex flex-col gap-2">
         <h3 className="text text-primary text-base">{title}</h3>
