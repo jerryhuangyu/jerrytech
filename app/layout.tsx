@@ -16,7 +16,9 @@ export const metadata: Metadata = {
     siteName: 'jerrytech',
     images: [
       {
-        url: webMeta.image
+        url: webMeta.image,
+        width: 1200,
+        height: 630
       }
     ],
     type: 'website'
