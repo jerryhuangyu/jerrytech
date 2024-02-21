@@ -1,6 +1,6 @@
-import ProjectCard from "@/components/ProjectCard";
-import SectionTitle from "@/components/SectionTitle";
-import { projectCards } from "@/constants";
+import ProjectCard from '@/components/ProjectCard';
+import SectionTitle from '@/components/SectionTitle';
+import { projectCards } from '@/constants';
 
 const Projects = () => {
   return (

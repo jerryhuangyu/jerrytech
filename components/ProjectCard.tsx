@@ -19,8 +19,8 @@ const ProjectCard = ({ card }: ProjectCardPorps) => {
         <IconLink icon={github} name="github" to={card.source} />
         <IconLink icon={link} name="github" to={card.demo} />
       </div>
-      <h3 className="text-primary text-xl font-light">{card.name}</h3>
-      <div className="text-secondary flex flex-wrap justify-center gap-3 tracking-tight ">
+      <h3 className="text-xl font-light text-primary">{card.name}</h3>
+      <div className="flex flex-wrap justify-center gap-3 tracking-tight text-secondary ">
         {card.skills.map((s) => (
           <p key={s} className="font-mono text-xs font-thin brightness-75">
             {s}
