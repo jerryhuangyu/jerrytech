@@ -1,8 +1,6 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-
 export type BasicLink = {
   name: string;
-  icon: string | StaticImport;
+  icon: string;
   to: string;
 };
 
@@ -13,4 +11,4 @@ export type Card = {
   source: string;
 };
 
-export type Section = "" | "home" | "about" | "experience" | "project";
+export type Section = '' | 'home' | 'about' | 'experience' | 'project';
