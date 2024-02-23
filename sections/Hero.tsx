@@ -1,4 +1,6 @@
-import HeroModelCanvas from '@/components/canvas/HeroModel';
+import { Suspense, lazy } from 'react';
+
+const HeroModelCanvas = lazy(() => import('@/components/canvas/HeroModel'));
 
 const Hero = () => {
   return (
@@ -17,7 +19,9 @@ const Hero = () => {
           </p>
         </div>
         <div className="mt-8 h-60">
-          <HeroModelCanvas />
+          <Suspense fallback={<p>Loading ...</p>}>
+            <HeroModelCanvas />
+          </Suspense>
         </div>
       </div>
     </div>
