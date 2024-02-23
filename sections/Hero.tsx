@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className="text-3xl text-purple-400 xs:text-4xl md:text-7xl">
             A front-end developer
           </h1>
-          <p className="text max-w-[330px] text-center text-sm text-secondary xs:max-w-[400px] md:max-w-[750px] md:text-xl">
+          <p className="text max-w-[330px] text-center text-sm font-light text-secondary xs:max-w-[400px] md:max-w-[750px] md:text-xl">
             I&apos;m passionate about creating experiences that are easy to use,
             accessible, and that meet the user&apos;s needs.
           </p>
