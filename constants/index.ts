@@ -100,9 +100,15 @@ export const projectCards: Card[] = [
   },
   {
     name: 'NOXGYM',
-    skills: ['React', 'HTML', 'CSS'],
-    demo: 'https://www.instagram.com/boyu4082/',
-    source: 'https://github.com/jerryhuangyu'
+    skills: ['React', 'HTML', 'CSS', 'JavaScript'],
+    demo: 'https://noxgym.vercel.app/',
+    source: 'https://github.com/jerryhuangyu/FitnessWebPage'
+  },
+  {
+    name: 'Ubike Clone',
+    skills: ['React', 'Axios', 'Ant-Design', 'YouBike-API'],
+    demo: 'https://you-bike-clone.vercel.app/',
+    source: 'https://github.com/jerryhuangyu/YouBikeClone'
   },
   {
     name: 'ZhèTEA',
