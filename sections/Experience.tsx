@@ -1,6 +1,6 @@
-import SectionTitle from "@/components/SectionTitle";
-import ExperienceDetail from "@/components/ExperienceDetail";
-import { experiences } from "@/constants";
+import SectionTitle from '@/components/SectionTitle';
+import ExperienceDetail from '@/components/ExperienceDetail';
+import { experiences } from '@/constants';
 
 const Experience = () => {
   return (
