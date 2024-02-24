@@ -89,13 +89,13 @@ export const projectCards: Card[] = [
   {
     name: 'S-Insight',
     skills: ['React', 'Tailwindcss', 'Express', 'Finnhub-API', 'Driver.js'],
-    demo: 'https://stock-analyze.vercel.app/',
+    demo: 'https://stockinsight.vercel.app',
     source: 'https://github.com/jerryhuangyu/StockAnalyze/'
   },
   {
     name: 'Tshirt Maker',
     skills: ['React', 'Framer-Motion', 'Express', 'OpenAI-API', 'Three.js'],
-    demo: 'https://jerryhuangyu.github.io/TShirtCustomApp/',
+    demo: 'https://tshirtmaker.vercel.app/',
     source: 'https://github.com/jerryhuangyu/TShirtCustomApp'
   },
   {
@@ -113,7 +113,7 @@ export const projectCards: Card[] = [
   {
     name: 'ZhèTEA',
     skills: ['React-Native', 'React', 'TypeScript', 'Framer Motion'],
-    demo: 'https://www.instagram.com/boyu4082/',
-    source: 'https://github.com/jerryhuangyu'
+    demo: 'https://large-type.com/#Wait%20for%20it%2C%20almost%20done.',
+    source: 'https://github.com/jerryhuangyu/zhetea'
   }
 ];
