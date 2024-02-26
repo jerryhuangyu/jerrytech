@@ -23,7 +23,10 @@ export const metadata: Metadata = {
     ],
     type: 'website'
   },
-  description: webMeta.description
+  description: webMeta.description,
+  other: {
+    'google-site-verification': 'nCM1VbRw6kcf75_lXHWs8ZpTlZPwCxCyaURqDLzypK0'
+  }
 };
 
 export default function RootLayout({
