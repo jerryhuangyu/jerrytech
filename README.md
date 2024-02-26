@@ -4,15 +4,17 @@
 
 ## 🦄 Features
 
-- **Server-side Rendering**: using Next.js's Server Components for server-side rendering strategies.
+- **Server-side Rendering**:
+using Next.js's Server Components for server-side rendering strategies.
 
-- **3D Model**: utilizing Three.js for 3D model rendering and user interaction handling
+- **3D Model**:
+utilizing Three.js for 3D model rendering and user interaction handling
 
-- **Lazy Loading**: integrate React's lazy loading and suspense components to optimize FCP.
+- **Lazy Loading**:
+integrate React's lazy loading and suspense components to optimize FCP.
 
 - **State Management**:
-Valtio manages state in the project, facilitating smooth state transitions triggered by user interactions and seamlessly re-rendering components dependent on the updated state through proxies.
-
+using Valtio create self-aware proxy, allowing subscription and reactivity when update the state.
 
 ## 💭 How can it be improved?
 
