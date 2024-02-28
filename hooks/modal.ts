@@ -9,7 +9,9 @@ export const usePreviewModal = (description: string, imageUrl: string) => {
       color: '#eaeaea',
       grow: 'row',
       padding: 20,
-      showConfirmButton: false
+      imageHeight: 550,
+      showConfirmButton: false,
+      customClass: { image: 'modal' }
     });
   };
   return { open };

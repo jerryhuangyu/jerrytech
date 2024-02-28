@@ -82,3 +82,7 @@ html {
     transform: translate(0);
   }
 }
+
+.modal {
+  object-fit: scale-down;
+}
