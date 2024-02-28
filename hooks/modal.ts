@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2';
 
 export const usePreviewModal = (description: string, imageUrl: string) => {
+  const imageHeight = window.innerWidth > 425 ? 550 : 250;
   const open = () => {
     Swal.fire({
       text: description,
@@ -9,9 +10,10 @@ export const usePreviewModal = (description: string, imageUrl: string) => {
       color: '#eaeaea',
       grow: 'row',
       padding: 20,
-      imageHeight: 550,
+      imageHeight,
       showConfirmButton: false,
-      customClass: { image: 'modal' }
+      customClass: { image: 'modal' },
+      showCloseButton: true
     });
   };
   return { open };
