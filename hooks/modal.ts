@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import Swal from 'sweetalert2';
 
 export const usePreviewModal = (description: string, imageUrl: string) => {
-  const imageHeight = window.innerWidth > 425 ? 550 : 250;
+  let imageHeight = 250;
+
+  useEffect(() => {
+    imageHeight = window.innerWidth > 425 ? 550 : 250;
+    console.log(imageHeight, 'hi');
+  }, []);
+
   const open = () => {
     Swal.fire({
       text: description,
@@ -16,5 +23,6 @@ export const usePreviewModal = (description: string, imageUrl: string) => {
       showCloseButton: true
     });
   };
+
   return { open };
 };
