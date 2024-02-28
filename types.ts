@@ -9,6 +9,8 @@ export type Card = {
   skills: string[];
   demo: string;
   source: string;
+  description: string;
+  projectImage: string;
 };
 
 export type Section = '' | 'home' | 'about' | 'experience' | 'project';

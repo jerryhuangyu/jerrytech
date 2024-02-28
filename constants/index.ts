@@ -87,33 +87,51 @@ export const SocialMediaLinks: BasicLink[] = [
 
 export const projectCards: Card[] = [
   {
+    name: 'Portfolio',
+    skills: ['Next.js', 'Tailwindcss', 'Three.js', 'Valtio', 'TypeScript'],
+    demo: 'https://jerrytech.vercel.app/',
+    source: 'https://github.com/jerryhuangyu/jerrytech',
+    description: '瞭解我的小地方',
+    projectImage: '/projects/home_preview.webp'
+  },
+  {
     name: 'S-Insight',
     skills: ['React', 'Tailwindcss', 'Express', 'Finnhub-API', 'Driver.js'],
     demo: 'https://stockinsight.vercel.app',
-    source: 'https://github.com/jerryhuangyu/StockAnalyze/'
+    source: 'https://github.com/jerryhuangyu/StockAnalyze/',
+    description: '追蹤您的投資組合，可視化交易紀錄',
+    projectImage: '/projects/sinsight_preview.webp'
   },
   {
     name: 'Tshirt Maker',
     skills: ['React', 'Framer-Motion', 'Express', 'OpenAI-API', 'Three.js'],
     demo: 'https://tshirtmaker.vercel.app/',
-    source: 'https://github.com/jerryhuangyu/TShirtCustomApp'
+    source: 'https://github.com/jerryhuangyu/TShirtCustomApp',
+    description: '',
+    projectImage: '/projects/tshirtmaker_preview.webp'
   },
   {
     name: 'NOXGYM',
     skills: ['React', 'HTML', 'CSS', 'JavaScript'],
     demo: 'https://noxgym.vercel.app/',
-    source: 'https://github.com/jerryhuangyu/FitnessWebPage'
+    source: 'https://github.com/jerryhuangyu/FitnessWebPage',
+    description: '',
+    projectImage: '/projects/noxgym_preview.webp'
   },
   {
     name: 'Ubike Clone',
     skills: ['React', 'Axios', 'Ant-Design', 'YouBike-API'],
     demo: 'https://you-bike-clone.vercel.app/',
-    source: 'https://github.com/jerryhuangyu/YouBikeClone'
+    source: 'https://github.com/jerryhuangyu/YouBikeClone',
+    description: '',
+    projectImage: '/projects/youbike_preview.webp'
   },
   {
     name: 'ZhèTEA',
     skills: ['React-Native', 'React', 'TypeScript', 'Framer Motion'],
     demo: 'https://large-type.com/#Wait%20for%20it%2C%20almost%20done.',
-    source: 'https://github.com/jerryhuangyu/zhetea'
+    source: 'https://github.com/jerryhuangyu/zhetea',
+    description: '加緊趕工中 ...',
+    projectImage: '/projects/waitforit.webp'
   }
 ];
