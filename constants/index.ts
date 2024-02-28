@@ -107,7 +107,7 @@ export const projectCards: Card[] = [
     skills: ['React', 'Framer-Motion', 'Express', 'OpenAI-API', 'Three.js'],
     demo: 'https://tshirtmaker.vercel.app/',
     source: 'https://github.com/jerryhuangyu/TShirtCustomApp',
-    description: '',
+    description: '釋放想像力，定義獨特風格',
     projectImage: '/projects/tshirtmaker_preview.webp'
   },
   {
@@ -115,7 +115,7 @@ export const projectCards: Card[] = [
     skills: ['React', 'HTML', 'CSS', 'JavaScript'],
     demo: 'https://noxgym.vercel.app/',
     source: 'https://github.com/jerryhuangyu/FitnessWebPage',
-    description: '',
+    description: '健身革命新體驗，打造理想體態',
     projectImage: '/projects/noxgym_preview.webp'
   },
   {
@@ -123,7 +123,7 @@ export const projectCards: Card[] = [
     skills: ['React', 'Axios', 'Ant-Design', 'YouBike-API'],
     demo: 'https://you-bike-clone.vercel.app/',
     source: 'https://github.com/jerryhuangyu/YouBikeClone',
-    description: '',
+    description: '借車不落人後，查詢即時 YouBike 借還站資訊',
     projectImage: '/projects/youbike_preview.webp'
   },
   {
