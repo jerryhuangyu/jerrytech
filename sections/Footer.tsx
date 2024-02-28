@@ -1,4 +1,4 @@
-import IconLink from '@/components/IconLink';
+import IconLink from '@/components/icons/IconLink';
 import { SocialMediaLinks } from '@/constants';
 
 const Footer = () => {
