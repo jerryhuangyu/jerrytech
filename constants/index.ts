@@ -96,7 +96,7 @@ export const projectCards: Card[] = [
   },
   {
     name: 'S-Insight',
-    skills: ['React', 'Tailwindcss', 'Express', 'Finnhub-API', 'Driver.js'],
+    skills: ['React', 'MySQL', 'Express', 'OAuth', 'RTK Query'],
     demo: 'https://stockinsight.vercel.app',
     source: 'https://github.com/jerryhuangyu/StockAnalyze/',
     description: '追蹤您的投資組合，可視化交易紀錄',
@@ -104,15 +104,15 @@ export const projectCards: Card[] = [
   },
   {
     name: 'Tshirt Maker',
-    skills: ['React', 'Framer-Motion', 'Express', 'OpenAI-API', 'Three.js'],
+    skills: ['React', 'Framer-Motion', 'Third-party API', 'Three.js'],
     demo: 'https://tshirtmaker.vercel.app/',
     source: 'https://github.com/jerryhuangyu/TShirtCustomApp',
-    description: '釋放想像力，定義獨特風格',
+    description: '釋放想像力，定義衣服的獨特風格',
     projectImage: '/projects/tshirtmaker_preview.webp'
   },
   {
     name: 'NOXGYM',
-    skills: ['React', 'HTML', 'CSS', 'JavaScript'],
+    skills: ['React', 'HTML', 'CSS', 'TypeScript'],
     demo: 'https://noxgym.vercel.app/',
     source: 'https://github.com/jerryhuangyu/FitnessWebPage',
     description: '健身革命新體驗，打造理想體態',
@@ -120,7 +120,7 @@ export const projectCards: Card[] = [
   },
   {
     name: 'Ubike Clone',
-    skills: ['React', 'Axios', 'Ant-Design', 'YouBike-API'],
+    skills: ['React', 'Axios', 'Ant-Design', 'Third-party API'],
     demo: 'https://you-bike-clone.vercel.app/',
     source: 'https://github.com/jerryhuangyu/YouBikeClone',
     description: '借車不落人後，查詢即時 YouBike 借還站資訊',
@@ -128,7 +128,7 @@ export const projectCards: Card[] = [
   },
   {
     name: 'ZhèTEA',
-    skills: ['React-Native', 'React', 'TypeScript', 'Framer Motion'],
+    skills: ['React-Native', 'Expo', 'TypeScript'],
     demo: 'https://large-type.com/#Wait%20for%20it%2C%20almost%20done.',
     source: 'https://github.com/jerryhuangyu/zhetea',
     description: '加緊趕工中 ...',
