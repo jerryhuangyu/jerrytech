@@ -1,10 +1,10 @@
 'use client';
 
-import ClientIconLink from '@/components/icons/ClientIconLink';
-import github from '@/images/github.svg';
-import link from '@/images/link.svg';
+import ClientIconLink from '@/src/components/icons/ClientIconLink';
+import github from '@/public/icons//github.svg';
+import link from '@/public/icons//link.svg';
 import { Card } from '@/types';
-import { usePreviewModal } from '@/hooks/modal';
+import { usePreviewModal } from '@/src/hooks/modal';
 
 type ProjectCardPorps = {
   card: Card;

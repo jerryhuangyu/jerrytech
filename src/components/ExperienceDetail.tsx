@@ -1,4 +1,4 @@
-import SkillBadge from '@/components/SkillBadge';
+import SkillBadge from '@/src/components/SkillBadge';
 
 type ExperienceDetailProps = {
   timestamp: string;

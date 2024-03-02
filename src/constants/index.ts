@@ -1,7 +1,7 @@
-import gmail from '@/images/gmail.svg';
-import github from '@/images/github.svg';
-import ig from '@/images/ig.svg';
-import linkedin from '@/images/linkedin.svg';
+import gmail from '@/public/icons//gmail.svg';
+import github from '@/public/icons//github.svg';
+import ig from '@/public/icons//ig.svg';
+import linkedin from '@/public/icons//linkedin.svg';
 import { Card, BasicLink } from '@/types';
 
 export const about =

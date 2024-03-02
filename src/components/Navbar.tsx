@@ -1,4 +1,4 @@
-import NavbarBtn from '@/components/NavbarBtn';
+import NavbarBtn from '@/src/components/NavbarBtn';
 import { RiHome5Line } from 'react-icons/ri';
 import { PiLightbulb } from 'react-icons/pi';
 import { BsSuitcase } from 'react-icons/bs';

@@ -6,7 +6,7 @@ import {
   About,
   Footer,
   Navbar
-} from '@/sections';
+} from '@/src/sections';
 
 export default function Home() {
   return (

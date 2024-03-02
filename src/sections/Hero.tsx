@@ -1,4 +1,4 @@
-import HeroAsset from '@/components/HeroAsset';
+import HeroAsset from '@/src/components/HeroAsset';
 
 const Hero = () => {
   return (

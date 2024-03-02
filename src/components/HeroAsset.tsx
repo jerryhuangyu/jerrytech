@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { lazy, useState, useTransition } from 'react';
 
-const HeroModel = lazy(() => import('@/components/canvas/Model'));
+const HeroModel = lazy(() => import('@/src/components/canvas/Model'));
 
 const HeroAsset = () => {
   const [, startTransition] = useTransition();

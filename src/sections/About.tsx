@@ -1,5 +1,5 @@
-import SectionTitle from '@/components/SectionTitle';
-import { about } from '@/constants';
+import SectionTitle from '@/src/components/SectionTitle';
+import { about } from '@/src/constants';
 
 const About = () => {
   return (

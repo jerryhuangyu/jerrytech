@@ -1,5 +1,5 @@
-import IconLink from '@/components/icons/IconLink';
-import { SocialMediaLinks } from '@/constants';
+import IconLink from '@/src/components/icons/IconLink';
+import { SocialMediaLinks } from '@/src/constants';
 
 const Footer = () => {
   return (

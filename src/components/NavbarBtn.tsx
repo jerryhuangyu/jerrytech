@@ -3,7 +3,7 @@
 import React from 'react';
 import { useSnapshot } from 'valtio';
 import { useRouter } from 'next/navigation';
-import { store } from '@/store';
+import { store } from '@/src/store';
 import { Section } from '@/types';
 
 type NavbarBtnProps = {
@@ -25,7 +25,7 @@ const NavbarBtn = ({ to, name, icon }: NavbarBtnProps) => {
       }}
     >
       <div className="text-primary brightness-75">{icon}</div>
-      <button className="text-primary select-none text-sm">{name}</button>
+      <button className="select-none text-sm text-primary">{name}</button>
     </span>
   );
 };
