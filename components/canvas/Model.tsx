@@ -1,12 +1,16 @@
 'use client';
 
-import { Suspense, useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from './Loader';
 
-const Model = () => {
-  const model = useGLTF('/hrc/hrc_model.glb');
+type ModelProps = {
+  path: string;
+};
+
+const Model = ({ path }: ModelProps) => {
+  const model = path ? useGLTF(path) : useGLTF('/hrc/hrc_model.glb');
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -29,7 +33,11 @@ const Model = () => {
   );
 };
 
-const ModelCanvas = () => (
+type ModelCanvasProps = {
+  children: React.ReactNode;
+};
+
+const ModelCanvas = ({ children }: ModelCanvasProps) => (
   <Canvas
     className="z-20"
     frameloop="demand"
@@ -45,30 +53,19 @@ const ModelCanvas = () => (
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
       />
-      <Model />
+      {children}
     </Suspense>
 
     <Preload all />
   </Canvas>
 );
 
-const CubeLoader = () => (
-  <div className="flex h-full w-full items-center justify-center">
-    <div className="loader"></div>;
-  </div>
-);
-
 const HeroModel = () => {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setShow(true);
-    }, 3000);
-    return () => clearTimeout(timeoutId);
-  });
-
-  return <>{show ? <ModelCanvas /> : <CubeLoader />}</>;
+  return (
+    <ModelCanvas>
+      <Model path="/hrc/hrc_model.glb" />
+    </ModelCanvas>
+  );
 };
 
 export default HeroModel;
