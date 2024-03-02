@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="flex h-screen items-center" id="home">
       <div className="mt-36 flex aspect-[2/1] w-screen flex-col justify-center">
-        <div className="mx-auto flex flex-col items-center">
+        <div className="mx-auto flex flex-col items-center md:gap-1">
           <h1 className="text-3xl text-primary xs:text-4xl md:text-7xl">
             Hello. I&apos;m Jerry.
           </h1>
