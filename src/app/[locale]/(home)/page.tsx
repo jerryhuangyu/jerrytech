@@ -1,3 +1,4 @@
+import FloatBtn from '@/src/components/FloatBtn';
 import {
   Skillset,
   Projects,
@@ -18,6 +19,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Footer />
+      <FloatBtn />
     </main>
   );
 }
