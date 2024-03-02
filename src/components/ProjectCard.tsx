@@ -6,15 +6,17 @@ import link from '@/public/icons//link.svg';
 import { Card } from '@/types';
 import { usePreviewModal } from '@/src/hooks/modal';
 
-type ProjectCardPorps = {
-  card: Card;
-};
+type ProjectCardPorps = Card;
 
-const ProjectCard = ({ card }: ProjectCardPorps) => {
-  const { open: openPreviewModal } = usePreviewModal(
-    card.description,
-    card.projectImage
-  );
+const ProjectCard = ({
+  description,
+  projectImage,
+  source,
+  demo,
+  name,
+  skills
+}: ProjectCardPorps) => {
+  const { open: openPreviewModal } = usePreviewModal(description, projectImage);
 
   return (
     <div
@@ -22,12 +24,12 @@ const ProjectCard = ({ card }: ProjectCardPorps) => {
       onClick={openPreviewModal}
     >
       <div className="absolute right-0 top-0 z-50 flex gap-3 p-5">
-        <ClientIconLink icon={github} name="github" to={card.source} />
-        <ClientIconLink icon={link} name="demo" to={card.demo} />
+        <ClientIconLink icon={github} name="github" to={source} />
+        <ClientIconLink icon={link} name="demo" to={demo} />
       </div>
-      <h3 className="text-xl font-light text-primary">{card.name}</h3>
+      <h3 className="text-xl font-light text-primary">{name}</h3>
       <div className="flex flex-wrap justify-center gap-3 tracking-tight text-secondary ">
-        {card.skills.map((s) => (
+        {skills.map((s) => (
           <p key={s} className="font-mono text-xs font-thin brightness-75">
             {s}
           </p>

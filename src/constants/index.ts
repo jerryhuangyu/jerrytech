@@ -4,9 +4,6 @@ import ig from '@/public/icons//ig.svg';
 import linkedin from '@/public/icons//linkedin.svg';
 import { Card, BasicLink } from '@/types';
 
-export const about =
-  '一位居住在台灣的開發人員，擁有開發網頁、AVMR、機器人、點雲應用的經驗。目前使用 React 作為網頁開發的主要技術，近期亦嘗試使用 Next.js 進行開發。喜歡探索不同的程式語言和框架，具備在有限時間內學習並應用的能力，快速適應新的任務和需求。碩班進入精於延展實境應用的實驗室因此接觸不同類型的應用開發，愛上了將想法轉換成實際產品的過程，成為我決心從事軟體開發職業的契機，因此透過自律、堅持和實踐，為成為全端工程師的目標準備。';
-
 export const skills = [
   'React',
   'Next.js',

@@ -1,12 +1,13 @@
 import SectionTitle from '@/src/components/SectionTitle';
-import { about } from '@/src/constants';
+import { useTranslations } from 'next-intl';
 
 const About = () => {
+  const t = useTranslations('Index');
   return (
     <div className="section-wrap">
-      <SectionTitle title="About" />
+      <SectionTitle title={t('sectionTitle.about')} />
       <p className="text font-light text-secondary brightness-110 xl:text-[17px]">
-        {about}
+        {t('about')}
       </p>
     </div>
   );

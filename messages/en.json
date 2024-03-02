@@ -1,0 +1,133 @@
+{
+  "Index": {
+    "sectionTitle": {
+      "about": "About",
+      "skillset": "Skillset",
+      "experience": "Experience",
+      "project": "Project"
+    },
+    "hero": {
+      "title1": "Hello. I'm Jerry.",
+      "title2": "A front-end developer",
+      "intro": "I'm passionate about creating experiences that are easy to use, accessible, and that meet the user's needs."
+    },
+    "about": "A skilled developer based in Taiwan have experience in web, AVMR, robotics, and point cloud technology. I specialize in developing web applications using React and Next.js. During my pursuit of a master's degree, I have worked on various projects and discovered my passion for using my creativity to build meaningful things. Through self-discipline, perseverance, and hands-on experience, I am preparing myself to become a full-stack engineer.",
+    "experiences": {
+      "one": {
+        "timestamp": "Nov 2023 - Feb 2024",
+        "title": "Republic of China Army - Infantryman",
+        "detail": "After four months of military training, I became a qualified infantryman. The training included participation in mechanical training, shooting training, shock education, bayonet techniques, and grenade throwing.",
+        "skills": {
+          "1": "清槍開始清槍蹲下",
+          "2": "站哨",
+          "3": "放行",
+          "4": "為陸軍當家"
+        }
+      },
+      "two": {
+        "timestamp": "May 2022 - Jul 2023",
+        "title": "XRLab (NCKU) - Collaborative Mixed Reality System for Humans and Robots",
+        "detail": "The project is dedicated to enhancing human-robot collaboration on construction jobsites. To achieve this, the project involves developing a mobile platform with omnidirectional wheels and a mixed reality collaborative interface. The project also encompasses the development of various functionalities, such as PID control, forward and inverse kinematics calculations, navigation, ROS communication architecture, and MR interaction functionality.",
+        "skills": {
+          "1": "ROS",
+          "2": "MRTK",
+          "3": "HoloLens 2",
+          "4": "Unity"
+        }
+      },
+      "three": {
+        "timestamp": "Jan 2022 - Jan 2023",
+        "title": "XRLab (NCKU) - Advanced Intelligent Security Detection System",
+        "detail": "Collaborating with the management team, we created a solution that covers the entire process from scanning to generating reports. We used on-site point cloud and BIM information overlay and extraction, and carried out compliance checks to produce opening protection improvement reports. My role included cleaning and extracting point cloud data, identifying features, checking regulatory compliance, and developing user interfaces.",
+        "skills": {
+          "1": "BIM",
+          "2": "PCL",
+          "3": "CloudCompare",
+          "4": "BLK2GO",
+          "5": "Unity"
+        }
+      }
+    },
+    "projects": {
+      "portfolio": {
+        "name": "Portfolio",
+        "skills": {
+          "1": "Next.js",
+          "2": "Tailwindcss",
+          "3": "Three.js",
+          "4": "Valtio",
+          "5": "TypeScript"
+        },
+        "demo": "https://jerrytech.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/jerrytech",
+        "description": "The perfect place to learn more about me.",
+        "projectImage": "/projects/home_preview.webp"
+      },
+      "sinsight": {
+        "name": "S-Insight",
+        "skills": {
+          "1": "React",
+          "2": "MySQL",
+          "3": "Express",
+          "4": "OAuth",
+          "5": "RTK Query"
+        },
+        "demo": "https://stockinsight.vercel.app",
+        "source": "https://github.com/jerryhuangyu/StockAnalyze/",
+        "description": "Empower Your Investments: Track and Visualize Your Portfolio Like Never Before!",
+        "projectImage": "/projects/sinsight_preview.webp"
+      },
+      "tshirtmaker": {
+        "name": "Tshirt Maker",
+        "skills": {
+          "1": "React",
+          "2": "Framer-Motion",
+          "3": "Third-party API",
+          "4": "Three.js"
+        },
+        "demo": "https://tshirtmaker.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/TShirtCustomApp",
+        "description": "Unleash your imagination and define your unique style with our t-shirt maker",
+        "projectImage": "/projects/tshirtmaker_preview.webp"
+      },
+      "noxgym": {
+        "name": "NOXGYM",
+        "skills": {
+          "1": "React",
+          "2": "HTML",
+          "3": "CSS",
+          "4": "TypeScript"
+        },
+        "demo": "https://noxgym.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/FitnessWebPage",
+        "description": "Transform your body with revolutionary fitness.",
+        "projectImage": "/projects/noxgym_preview.webp"
+      },
+      "ubikeclone": {
+        "name": "Ubike Clone",
+        "skills": {
+          "1": "React",
+          "2": "Axios",
+          "3": "Ant-Design",
+          "4": "Third-party API"
+        },
+        "demo": "https://you-bike-clone.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/YouBikeClone",
+        "description": "A real-time YouBike station checking service for easy bike borrowing and returning.",
+        "projectImage": "/projects/youbike_preview.webp"
+      },
+      "zhetea": {
+        "name": "ZhèTEA",
+        "skills": {
+          "1": "React-Native",
+          "2": "Expo",
+          "3": "TypeScript"
+        },
+        "demo": "https://large-type.com/#Wait%20for%20it%2C%20almost%20done.",
+        "source": "https://github.com/jerryhuangyu/zhetea",
+        "description": "Wait for it, almost done ...",
+        "projectImage": "/projects/waitforit.webp"
+      }
+    }
+  }
+}

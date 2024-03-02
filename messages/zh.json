@@ -1,0 +1,133 @@
+{
+  "Index": {
+    "sectionTitle": {
+      "about": "關於",
+      "skillset": "技能",
+      "experience": "經驗",
+      "project": "專案"
+    },
+    "hero": {
+      "title1": "ʕᴥ• ʔ 我是柏瑜",
+      "title2": "A front-end developer",
+      "intro": "I'm passionate about creating experiences that are easy to use, accessible, and that meet the user's needs."
+    },
+    "about": "一位居住在台灣的開發人員，擁有開發網頁、AVMR、機器人、點雲應用的經驗。目前使用 React 作為網頁開發的主要技術，近期亦嘗試使用 Next.js 進行開發。喜歡探索不同的程式語言和框架，具備在有限時間內學習並應用的能力，快速適應新的任務和需求。碩班進入精於延展實境應用的實驗室因此接觸不同類型的應用開發，愛上了將想法轉換成實際產品的過程，成為我決心從事軟體開發職業的契機，因此透過自律、堅持和實踐，為成為全端工程師的目標準備。",
+    "experiences": {
+      "one": {
+        "timestamp": "Nov 2023 - Feb 2024",
+        "title": "Republic of China Army - 步槍兵",
+        "detail": "透過四個月的部隊養成，訓練成為合格的步槍兵。其中參與機械訓練、射擊訓練、震撼教育、刺槍術、手榴彈投擲。",
+        "skills": {
+          "1": "清槍開始清槍蹲下",
+          "2": "站哨",
+          "3": "放行",
+          "4": "為陸軍當家"
+        }
+      },
+      "two": {
+        "timestamp": "May 2022 - Jul 2023",
+        "title": "XRLab (NCKU) - 混合實境人機協作系統",
+        "detail": "致力於開發人機協作交互的解決方案，該專案開發全向輪的移動平台及混合實境的協作介面，以提升營建行業中人機的交互性能。其中參與 PID 控制、正反向運動學計算、2D 導航、ROS 通訊架構、MR 交互功能的開發。",
+        "skills": {
+          "1": "ROS",
+          "2": "MRTK",
+          "3": "HoloLens 2",
+          "4": "Unity"
+        }
+      },
+      "three": {
+        "timestamp": "Jan 2022 - Jan 2023",
+        "title": "XRLab (NCKU) - 智慧安全偵測進階系統",
+        "detail": "與監造團隊合作開發從掃描至報告生成的解決方案，利用現地點雲與 BIM 資訊進行疊合、提取，並針對法規進⾏檢核，提供使⽤者開⼝防護改善報告書。其中參與點雲資料清洗與提取、特徵值辨識、法規檢核、用戶介面的開發。",
+        "skills": {
+          "1": "BIM",
+          "2": "PCL",
+          "3": "CloudCompare",
+          "4": "BLK2GO",
+          "5": "Unity"
+        }
+      }
+    },
+    "projects": {
+      "portfolio": {
+        "name": "個人網站",
+        "skills": {
+          "1": "Next.js",
+          "2": "Tailwindcss",
+          "3": "Three.js",
+          "4": "Valtio",
+          "5": "TypeScript"
+        },
+        "demo": "https://jerrytech.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/jerrytech",
+        "description": "瞭解我的小地方",
+        "projectImage": "/projects/home_preview.webp"
+      },
+      "sinsight": {
+        "name": "S-Insight",
+        "skills": {
+          "1": "React",
+          "2": "MySQL",
+          "3": "Express",
+          "4": "OAuth",
+          "5": "RTK Query"
+        },
+        "demo": "https://stockinsight.vercel.app",
+        "source": "https://github.com/jerryhuangyu/StockAnalyze/",
+        "description": "追蹤您的投資組合，可視化交易紀錄",
+        "projectImage": "/projects/sinsight_preview.webp"
+      },
+      "tshirtmaker": {
+        "name": "Tshirt Maker",
+        "skills": {
+          "1": "React",
+          "2": "Framer-Motion",
+          "3": "Third-party API",
+          "4": "Three.js"
+        },
+        "demo": "https://tshirtmaker.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/TShirtCustomApp",
+        "description": "釋放想像力，定義衣服的獨特風格",
+        "projectImage": "/projects/tshirtmaker_preview.webp"
+      },
+      "noxgym": {
+        "name": "NOXGYM",
+        "skills": {
+          "1": "React",
+          "2": "HTML",
+          "3": "CSS",
+          "4": "TypeScript"
+        },
+        "demo": "https://noxgym.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/FitnessWebPage",
+        "description": "健身革命新體驗，打造理想體態",
+        "projectImage": "/projects/noxgym_preview.webp"
+      },
+      "ubikeclone": {
+        "name": "Ubike 克隆",
+        "skills": {
+          "1": "React",
+          "2": "Axios",
+          "3": "Ant-Design",
+          "4": "Third-party API"
+        },
+        "demo": "https://you-bike-clone.vercel.app/",
+        "source": "https://github.com/jerryhuangyu/YouBikeClone",
+        "description": "借車不落人後，查詢即時 YouBike 借還站資訊",
+        "projectImage": "/projects/youbike_preview.webp"
+      },
+      "zhetea": {
+        "name": "ZhèTEA",
+        "skills": {
+          "1": "React-Native",
+          "2": "Expo",
+          "3": "TypeScript"
+        },
+        "demo": "https://large-type.com/#Wait%20for%20it%2C%20almost%20done.",
+        "source": "https://github.com/jerryhuangyu/zhetea",
+        "description": "加緊趕工中 ...",
+        "projectImage": "/projects/waitforit.webp"
+      }
+    }
+  }
+}
