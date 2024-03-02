@@ -1,6 +1,4 @@
-import { Suspense, lazy } from 'react';
-
-const HeroModelCanvas = lazy(() => import('@/components/canvas/HeroModel'));
+import HeroAsset from '@/components/HeroAsset';
 
 const Hero = () => {
   return (
@@ -17,11 +15,12 @@ const Hero = () => {
             I&apos;m passionate about creating experiences that are easy to use,
             accessible, and that meet the user&apos;s needs.
           </p>
+          <div className="text flex pt-1 text-purple-500">
+            click&nbsp;<div className="animate-bounce">↓</div>
+          </div>
         </div>
         <div className="mt-8 h-60">
-          <Suspense fallback={<p>Loading ...</p>}>
-            <HeroModelCanvas />
-          </Suspense>
+          <HeroAsset />
         </div>
       </div>
     </div>
