@@ -6,7 +6,6 @@ export const usePreviewModal = (description: string, imageUrl: string) => {
 
   useEffect(() => {
     imageHeight = window.innerWidth > 425 ? 550 : 250;
-    console.log(imageHeight, 'hi');
   }, []);
 
   const open = () => {
