@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div className="section-wrap mb-16">
       <SectionTitle title={t('sectionTitle.project')} />
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-3">
         {projects.map((project, index) => (
           <ProjectCard
             description={project.description}
@@ -21,6 +21,7 @@ const Projects = () => {
             name={project.name}
             skills={Object.values(project.skills)}
             key={`project-${index}`}
+            focus={index === 1}
           />
         ))}
       </div>
