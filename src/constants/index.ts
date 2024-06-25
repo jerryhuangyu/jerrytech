@@ -14,49 +14,35 @@ export const skills = [
   'HTML',
   'CSS',
 
-  'Tailwindcss',
+  'Tailwind',
   'Styled-Components',
+  'Material-UI',
+
   'Framer-Motion',
+  'React-Hook-Form',
+  'React-Query',
+  'Konva.js',
   'Three.js',
   'Driver.js',
+
   'i18n',
 
   'Redux',
   'RTK Query',
   'Valtio',
+  'Zustand',
 
   'Git',
   'Github',
+  'Bitbucket',
+  'Jira',
   'Postman',
 
   'Express.js',
+  'SQLite',
   'MySQL',
   'Firebase',
   'Supabase'
-];
-
-export const experiences = [
-  {
-    timestamp: 'Nov 2023 - Feb 2024',
-    title: 'Republic of China Army - 步槍兵',
-    detail:
-      '透過四個月的部隊養成，訓練成為合格的步槍兵。其中參與機械訓練、射擊訓練、震撼教育、刺槍術、手榴彈投擲。',
-    skills: ['清槍開始清槍蹲下', '站哨', '放行', '為陸軍當家']
-  },
-  {
-    timestamp: 'May 2022 - Jul 2023',
-    title: 'XRLab (NCKU) - 混合實境人機協作系統',
-    detail:
-      '致力於開發人機協作交互的解決方案，該專案開發全向輪的移動平台及混合實境的協作介面，以提升營建行業中人機的交互性能。其中參與 PID 控制、正反向運動學計算、2D 導航、ROS 通訊架構、MR 交互功能的開發。',
-    skills: ['ROS', 'MRTK', 'HoloLens 2', 'Unity']
-  },
-  {
-    timestamp: 'Jan 2022 - Jan 2023',
-    title: 'XRLab (NCKU) - 智慧安全偵測進階系統',
-    detail:
-      '與監造團隊合作開發從掃描至報告生成的解決方案，利用現地點雲與 BIM 資訊進行疊合、提取，並針對法規進⾏檢核，提供使⽤者開⼝防護改善報告書。其中參與點雲資料清洗與提取、特徵值辨識、法規檢核、用戶介面的開發。',
-    skills: ['BIM', 'PCL', 'CloudCompare', 'BLK2GO', 'Unity']
-  }
 ];
 
 export const SocialMediaLinks: BasicLink[] = [

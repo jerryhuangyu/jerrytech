@@ -1,18 +1,32 @@
+'use client';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+
 type SkillBadgeProps = {
   skill: string;
   highlight?: boolean;
 };
 
 const SkillBadge = ({ skill, highlight }: SkillBadgeProps) => {
-  const themeStyle = highlight
-    ? 'border-[#C785EC] bg-[#3D2853] text-[#C785EC]'
-    : 'border-[#333333] bg-[#232323] text-[#b9b9b9]';
+  const [isHovered, setIsHovered] = useState(false);
+  const themeStyle =
+    highlight || isHovered
+      ? 'border-[#C785EC] bg-[#3D2853] text-[#C785EC]'
+      : 'border-[#333333] bg-[#232323] text-[#b9b9b9]';
+
   return (
-    <p
-      className={`text-nowrap rounded-sm border-[1px] px-2 py-1 text-center text-sm font-light ${themeStyle}`}
+    <motion.div
+      whileHover={{ scale: 1.4 }}
+      whileInView={{ rotate: [5, -5, 5, -5, 0] }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      {skill}
-    </p>
+      <p
+        className={`text-nowrap rounded-sm border-[1px] px-2 py-1 text-center text-sm font-light ${themeStyle}`}
+      >
+        {skill}
+      </p>
+    </motion.div>
   );
 };
 export default SkillBadge;

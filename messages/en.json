@@ -14,7 +14,21 @@
     },
     "about": "A skilled developer based in Taiwan have experience in web, AVMR, robotics, and point cloud technology. I specialize in developing web applications using React and Next.js. During my pursuit of a master's degree, I have worked on various projects and discovered my passion for using my creativity to build meaningful things. Through self-discipline, perseverance, and hands-on experience, I am preparing myself to become a full-stack engineer.",
     "experiences": {
-      "one": {
+      "four": {
+        "timestamp": "Apr 2024 - Present",
+        "title": "FARobot, Inc - Senior Frontend Developer",
+        "detail": "Actively involved in the incremental refactoring of an existing project from jQuery to React. In this process, I developed several key features. These included canvas manipulation for interactive editing of robot routes, the implementation of undo/redo functionality, the addition of animations to enhance the user experience, the setup of testing in CI with end-to-end testing for the login flow, and the creation of a card and form system to simplify the property editing process.",
+        "skills": {
+          "1": "Undo/Redo",
+          "2": "Konva",
+          "3": "Cypress",
+          "4": "React Query",
+          "5": "Zustand",
+          "6": "Mui",
+          "7": "React Hook Form"
+        }
+      },
+      "three": {
         "timestamp": "Nov 2023 - Feb 2024",
         "title": "Republic of China Army - Infantryman",
         "detail": "After four months of military training, I became a qualified infantryman. The training included participation in mechanical training, shooting training, shock education, bayonet techniques, and grenade throwing.",
@@ -36,7 +50,7 @@
           "4": "Unity"
         }
       },
-      "three": {
+      "one": {
         "timestamp": "Jan 2022 - Jan 2023",
         "title": "XRLab (NCKU) - Advanced Intelligent Security Detection System",
         "detail": "Collaborating with the management team, we created a solution that covers the entire process from scanning to generating reports. We used on-site point cloud and BIM information overlay and extraction, and carried out compliance checks to produce opening protection improvement reports. My role included cleaning and extracting point cloud data, identifying features, checking regulatory compliance, and developing user interfaces.",
