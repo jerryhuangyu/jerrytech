@@ -25,7 +25,7 @@ const ScrollTypingWords = ({ text }: WordsAnimateProps) => {
       gsap.from(splitTypes.chars, {
         scrollTrigger: {
           trigger: container.current,
-          start: 'top 85%',
+          start: 'top 70%',
           end: 'top 30%',
           scrub: true,
           markers: false
