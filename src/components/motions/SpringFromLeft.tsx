@@ -1,7 +1,12 @@
 'use client';
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
-const SpringFromLeft = ({ children }) => {
+type SpringFromLeftProps = {
+  children: ReactNode;
+};
+
+const SpringFromLeft = ({ children }: SpringFromLeftProps) => {
   return (
     <motion.div
       initial={{ x: -200, opacity: 0 }}
