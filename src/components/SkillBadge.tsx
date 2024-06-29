@@ -19,6 +19,7 @@ const SkillBadge = ({ skill, highlight, animate = true }: SkillBadgeProps) => {
     <motion.div
       whileHover={animate ? { scale: 1.4 } : {}}
       whileInView={animate ? { rotate: [5, -5, 5, -5, 0] } : {}}
+      viewport={{ once: true }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
