@@ -5,9 +5,10 @@ import { useState } from 'react';
 type SkillBadgeProps = {
   skill: string;
   highlight?: boolean;
+  animate?: boolean;
 };
 
-const SkillBadge = ({ skill, highlight }: SkillBadgeProps) => {
+const SkillBadge = ({ skill, highlight, animate = true }: SkillBadgeProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const themeStyle =
     highlight || isHovered
@@ -16,8 +17,9 @@ const SkillBadge = ({ skill, highlight }: SkillBadgeProps) => {
 
   return (
     <motion.div
-      whileHover={{ scale: 1.4 }}
-      whileInView={{ rotate: [5, -5, 5, -5, 0] }}
+      whileHover={animate ? { scale: 1.4 } : {}}
+      whileInView={animate ? { rotate: [5, -5, 5, -5, 0] } : {}}
+      viewport={{ once: true }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
