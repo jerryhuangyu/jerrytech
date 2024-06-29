@@ -23,7 +23,7 @@ const ExperienceDetail = ({
         </p>
         <div className="flex flex-wrap gap-2 pt-1">
           {skills.map((skill) => (
-            <SkillBadge key={skill} skill={skill} highlight />
+            <SkillBadge key={skill} skill={skill} highlight animate={false} />
           ))}
         </div>
       </div>
