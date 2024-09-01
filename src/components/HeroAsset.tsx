@@ -2,12 +2,14 @@
 
 import Image from 'next/image';
 import { lazy, useState, useTransition } from 'react';
+import { useIsMobile } from '../hooks/device';
 
 const HeroModel = lazy(() => import('@/src/components/canvas/Model'));
 
 const HeroAsset = () => {
   const [, startTransition] = useTransition();
   const [load, setLoad] = useState(false);
+  const { isDesktop } = useIsMobile();
 
   const handleImageClicked = () => {
     startTransition(() => setLoad(true));
@@ -20,13 +22,12 @@ const HeroAsset = () => {
     >
       <Image
         priority
-        quality={100}
-        alt="Mountains"
+        quality={isDesktop() ? 100 : 4}
+        alt="Jerry Huang Yu"
         src="/author.png"
-        width={0}
-        height={0}
+        width={3000}
+        height={462}
         style={{ objectFit: 'cover', width: 'auto', height: '100%' }}
-        sizes={'100vh'}
       />
     </div>
   );
