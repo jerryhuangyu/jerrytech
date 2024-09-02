@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { webMeta } from '@/src/constants/metadata';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script type="text/javascript" async defer src="/console.js" />
       <body className={inter.className}>{children}</body>
       <GoogleAnalytics gaId="G-L8B625QVXC" />
     </html>
