@@ -15,7 +15,7 @@ const Experience = () => {
     <div className="section-wrap mb-4">
       <SectionTitle title={t('sectionTitle.experience')} />
       <div className="flex flex-col gap-8">
-        {experiences.map((experience, index) => (
+        {experiences.map((experience) => (
           <SpringFromLeft key={experience.title}>
             <ExperienceDetail
               timestamp={experience.timestamp}

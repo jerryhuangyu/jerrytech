@@ -13,4 +13,10 @@ export type Card = {
   projectImage: string;
 };
 
-export type Section = '' | 'home' | 'about' | 'experience' | 'project';
+export enum HOME_SECTIONS {
+  NONE = '',
+  HOME = 'home',
+  ABOUT = 'about',
+  EXPERIENCE = 'experience',
+  PROJECT = 'project'
+}
