@@ -17,7 +17,7 @@
     "@react-three/drei": "^9.97.6",
     "@react-three/fiber": "^8.15.16",
     "@types/three": "^0.161.2",
-    "antd": "^5.15.0",
+    "antd": "^5.20.6",
     "eslint-config-standard": "^17.1.0",
     "framer-motion": "^11.2.11",
     "gsap": "^3.12.5",
