@@ -28,7 +28,7 @@
     "react-icons": "^5.0.1",
     "sharp": "^0.33.2",
     "split-type": "^0.3.4",
-    "sweetalert2": "^11.10.5",
+    "sweetalert2": "^11.14.0",
     "three": "^0.168.0",
     "valtio": "^2.0.0"
   },
