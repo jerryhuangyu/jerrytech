@@ -1,8 +1,9 @@
-import gmail from '@/public/icons//gmail.svg';
+import blog from '@/public/icons//blog.svg';
 import github from '@/public/icons//github.svg';
+import gmail from '@/public/icons//gmail.svg';
 import ig from '@/public/icons//ig.svg';
 import linkedin from '@/public/icons//linkedin.svg';
-import { Card, BasicLink } from '@/types';
+import { BasicLink, Card } from '@/types';
 
 export const skills = [
   'React',
@@ -65,6 +66,11 @@ export const SocialMediaLinks: BasicLink[] = [
     name: 'github',
     icon: github,
     to: 'https://github.com/jerryhuangyu'
+  },
+  {
+    name: 'tech-blog',
+    icon: blog,
+    to: 'https://jerrytech-blog.vercel.app'
   }
 ];
 
