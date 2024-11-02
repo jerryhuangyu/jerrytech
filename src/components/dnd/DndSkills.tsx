@@ -18,6 +18,7 @@ import {
 	sortableKeyboardCoordinates,
 } from "@dnd-kit/sortable"
 import { useState } from "react"
+import DndHint from "./DndHint"
 import DndSkill from "./DndSkill"
 
 const DndSkills = () => {
@@ -42,17 +43,19 @@ const DndSkills = () => {
 		setSkills(updatedSkills)
 	}
 
-	// todo: create hint for dnd that user try drag and drop
 	return (
-		<DndContext collisionDetection={closestCorners} sensors={sensors} onDragEnd={handleDragEnd}>
-			<SortableContext items={skills} strategy={horizontalListSortingStrategy}>
-				<div className="flex flex-wrap gap-2">
-					{skills.map(skill => (
-						<DndSkill key={skill.id} id={skill.id} label={skill.label} src={skill.icon} />
-					))}
-				</div>
-			</SortableContext>
-		</DndContext>
+		<div className="relative">
+			<DndHint />
+			<DndContext collisionDetection={closestCorners} sensors={sensors} onDragEnd={handleDragEnd}>
+				<SortableContext items={skills} strategy={horizontalListSortingStrategy}>
+					<div className="flex flex-wrap gap-2">
+						{skills.map(skill => (
+							<DndSkill key={skill.id} id={skill.id} label={skill.label} src={skill.icon} />
+						))}
+					</div>
+				</SortableContext>
+			</DndContext>
+		</div>
 	)
 }
 export default DndSkills

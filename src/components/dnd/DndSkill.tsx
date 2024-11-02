@@ -10,11 +10,12 @@ type DndSkillProps = {
 	label: string
 	id: string
 	src: string
+	isHover?: boolean
 }
 
-const DndSkill = ({ label, id, src }: DndSkillProps) => {
+const DndSkill = ({ label, id, src, isHover = false }: DndSkillProps) => {
 	const { listeners, attributes, setNodeRef, transform, transition } = useSortable({ id: id })
-	const [isHovered, setIsHovered] = useState(false)
+	const [isHovered, setIsHovered] = useState(isHover)
 
 	return (
 		<div
