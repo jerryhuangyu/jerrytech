@@ -12,12 +12,12 @@
       "title2": "A front-end developer",
       "intro": "I'm passionate about creating experiences that are easy to use, accessible, and that meet the user's needs."
     },
-    "about": "A skilled developer based in Taiwan have experience in web, AVMR, robotics, and point cloud technology. I specialize in developing web applications using React and Next.js. During my pursuit of a master's degree, I have worked on various projects and discovered my passion for using my creativity to build meaningful things. Through self-discipline, perseverance, and hands-on experience, I am preparing myself to become a full-stack engineer.",
+    "about": "A developer based in Taiwan with experience in web applications, AVMR, robot control, and point cloud applications. I specialize in building web applications using component-based architecture (React.js) and am currently exploring Next.js development. During my master's degree studies, I worked on diverse projects that revealed my passion for creative problem-solving. This journey sparked my love for transforming ideas into practical applications and cemented my commitment to a career in software development.",
     "experiences": {
       "four": {
         "timestamp": "Apr 2024 - Present",
         "title": "FARobot, Inc - Senior Frontend Developer",
-        "detail": "Actively involved in the incremental refactoring of an existing project from jQuery to React. In this process, I developed several key features. These included canvas manipulation for interactive editing of robot routes, the implementation of undo/redo functionality, the addition of animations to enhance the user experience, the setup of testing in CI with end-to-end testing for the login flow, and the creation of a card and form system to simplify the property editing process.",
+        "detail": "Actively participated in the gradual refactoring of existing projects to a component-based architecture while developing key features: interactive canvas for map editing, undo functionality, no-code task management and dispatch system, monitoring dashboard, E2E testing infrastructure, HTTP server architecture improvements, and streamlined property editing through card and form systems.",
         "skills": {
           "1": "Undo/Redo",
           "2": "Konva",
@@ -25,7 +25,8 @@
           "4": "React Query",
           "5": "Zustand",
           "6": "Mui",
-          "7": "React Hook Form"
+          "7": "React Hook Form",
+          "8": "Drone CI"
         }
       },
       "three": {
