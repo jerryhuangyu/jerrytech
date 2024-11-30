@@ -26,7 +26,6 @@
       "suspicious": {
         "noArrayIndexKey": "off",
         "noConsoleLog": "warn",
-        "noEmptyBlockStatements": "error",
         "useAwait": "error"
       }
     }
