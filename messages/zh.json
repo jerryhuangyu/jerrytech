@@ -77,6 +77,19 @@
         "description": "瞭解我的小地方",
         "projectImage": "/projects/home_preview.webp"
       },
+      "lazymit": {
+        "name": "Lazymit",
+        "skills": {
+          "1": "React",
+          "2": "Ink",
+          "3": "套件",
+          "4": "AI"
+        },
+        "demo": "https://www.npmjs.com/package/lazymit",
+        "source": "https://github.com/jerryhuangyu/lazymit",
+        "description": "利用 AI 產生 Gitmoji-based 的 commit 訊息",
+        "projectImage": "/projects/lazymit_preview.webp"
+      },
       "sinsight": {
         "name": "S-Insight",
         "skills": {
@@ -129,18 +142,6 @@
         "source": "https://github.com/jerryhuangyu/YouBikeClone",
         "description": "借車不落人後，查詢即時 YouBike 借還站資訊",
         "projectImage": "/projects/youbike_preview.webp"
-      },
-      "zhetea": {
-        "name": "ZhèTEA",
-        "skills": {
-          "1": "React-Native",
-          "2": "Expo",
-          "3": "TypeScript"
-        },
-        "demo": "https://large-type.com/#Wait%20for%20it%2C%20almost%20done.",
-        "source": "https://github.com/jerryhuangyu/zhetea",
-        "description": "加緊趕工中 ...",
-        "projectImage": "/projects/waitforit.webp"
       }
     }
   }

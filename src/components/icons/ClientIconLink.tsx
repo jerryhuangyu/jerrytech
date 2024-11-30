@@ -1,24 +1,25 @@
-'use client';
+"use client"
 
-import React from 'react';
-import Image from 'next/image';
-import { BasicLink } from '@/types';
+import type { BasicLink } from "@/types"
+import Image from "next/image"
+import React from "react"
 
-type ClientIconLinkProps = BasicLink;
+type ClientIconLinkProps = BasicLink
 
 const ClientIconLink = ({ icon, name, to }: ClientIconLinkProps) => {
-  const onClick = (e: React.MouseEvent<HTMLElement>) => {
-    e.stopPropagation();
-    window.open(to, '_blank');
-  };
-  return (
-    <div
-      onClick={onClick}
-      className="cursor-pointer brightness-[.6] hover:brightness-200"
-    >
-      <Image className="invert" src={icon} alt={name} height={20} width={20} />
-    </div>
-  );
-};
+	const onClick = (e: React.MouseEvent<HTMLElement>) => {
+		e.stopPropagation()
+		window.open(to, "_blank")
+	}
+	return (
+		<div
+			onClick={onClick}
+			onKeyDown={() => {}}
+			className="cursor-pointer pointer-events-auto brightness-[.6] hover:brightness-200"
+		>
+			<Image className="invert" src={icon} alt={name} height={30} width={30} />
+		</div>
+	)
+}
 
-export default ClientIconLink;
+export default ClientIconLink

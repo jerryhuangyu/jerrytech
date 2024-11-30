@@ -79,6 +79,19 @@
         "description": "The perfect place to learn more about me.",
         "projectImage": "/projects/home_preview.webp"
       },
+      "lazymit": {
+        "name": "Lazymit",
+        "skills": {
+          "1": "React",
+          "2": "Ink",
+          "3": "Package",
+          "4": "AI"
+        },
+        "demo": "https://www.npmjs.com/package/lazymit",
+        "source": "https://github.com/jerryhuangyu/lazymit",
+        "description": "Use AI to Generate Gitmoji-based Commit Messages",
+        "projectImage": "/projects/lazymit_preview.webp"
+      },
       "sinsight": {
         "name": "S-Insight",
         "skills": {
@@ -131,18 +144,6 @@
         "source": "https://github.com/jerryhuangyu/YouBikeClone",
         "description": "A real-time YouBike station checking service for easy bike borrowing and returning.",
         "projectImage": "/projects/youbike_preview.webp"
-      },
-      "zhetea": {
-        "name": "ZhèTEA",
-        "skills": {
-          "1": "React-Native",
-          "2": "Expo",
-          "3": "TypeScript"
-        },
-        "demo": "https://large-type.com/#Wait%20for%20it%2C%20almost%20done.",
-        "source": "https://github.com/jerryhuangyu/zhetea",
-        "description": "Wait for it, almost done ...",
-        "projectImage": "/projects/waitforit.webp"
       }
     }
   }
