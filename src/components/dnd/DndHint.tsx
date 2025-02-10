@@ -31,8 +31,8 @@ const _DndHint = () => {
 	useGSAP(() => {
 		gsap.to(".dnd-hint", {
 			scrollTrigger: { trigger: ".dnd-hint", start: "top 90%" },
-			x: 140,
-			y: -60,
+			x: 210,
+			y: -75,
 			rotate: 18,
 			duration: DND_HINT_DURATION_SEC,
 			ease: "elastic.in(1,0.3)",
@@ -46,7 +46,7 @@ const _DndHint = () => {
 			<p
 				className={twMerge(
 					"dnd-hint-text [text-shadow:_0_4px_4px_rgb(216_180_254_/_0.7)]",
-					"absolute text-purple-300 font-bold text-md -top-24 left-[110px] rotate-[18deg] m-1 opacity-0",
+					"absolute text-purple-300 font-bold text-md -top-28 left-[180px] rotate-[18deg] m-1 opacity-0",
 					"before:absolute before:h-full before:w-full before:-z-10",
 					// dndHintComplete && "opacity-0 duration-500 pointer-events-none",
 				)}

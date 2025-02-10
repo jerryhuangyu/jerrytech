@@ -6,8 +6,10 @@ import linkedin from "@/public/icons//linkedin.svg"
 import {
 	BITBUCKET_SVG,
 	CSS_SVG,
+	CYPRESS_SVG,
 	DNDKIT_PNG,
 	DRIVER_SVG,
+	DRONE_CI_PNG,
 	EXPO_PNG,
 	EXPRESS_PNG,
 	FIREBASE_SVG,
@@ -24,17 +26,21 @@ import {
 	NEOVIM_SVG,
 	NEXTJS_SVG,
 	NEXT_INTL_PNG,
+	POSTGRESQL_SVG,
 	POSTMAN_SVG,
 	REACT_HOOK_FORM_PNG,
 	REACT_QUERY,
 	REACT_SVG,
 	REDUX_SVG,
+	RSBUILD_PNG,
 	SQLITE_PNG,
 	SUPABASE_SVG,
 	TAILWINDCSS_SVG,
 	THREE_SVG,
 	TS_SVG,
 	VIM_SVG,
+	VITEST_SVG,
+	VITE_SVG,
 	ZUSTAND_PNG,
 } from "@/public/icons/tech"
 import type { BasicLink } from "@/types"
@@ -44,6 +50,19 @@ export const techSkills = [
 	{ id: "next", label: "Next.js", icon: NEXTJS_SVG },
 	{ id: "react-native", label: "React Native", icon: REACT_SVG },
 	{ id: "expo", label: "Expo", icon: EXPO_PNG },
+
+	{ id: "vite", label: "Vite", icon: VITE_SVG },
+	{ id: "rsbuild", label: "Rsbuild", icon: RSBUILD_PNG },
+
+	{ id: "cypress", label: "Cypress", icon: CYPRESS_SVG },
+	{ id: "vitest", label: "Vitest", icon: VITEST_SVG },
+
+	{ id: "zustand", label: "Zustand", icon: ZUSTAND_PNG },
+	{ id: "react-query", label: "TanStack-Query", icon: REACT_QUERY },
+	{ id: "react-hook-form", label: "React-Hook-Form", icon: REACT_HOOK_FORM_PNG },
+	{ id: "redux", label: "Redux", icon: REDUX_SVG },
+	{ id: "rtk-query", label: "RTK Query", icon: REDUX_SVG },
+	// { id: "valtio", label: "Valtio", icon: "" },
 
 	{ id: "javascript", label: "JavaScript", icon: JS_SVG },
 	{ id: "typescript", label: "TypeScript", icon: TS_SVG },
@@ -55,8 +74,6 @@ export const techSkills = [
 	{ id: "material-ui", label: "Material-UI", icon: MUI_SVG },
 
 	{ id: "framer-motion", label: "Framer-Motion", icon: FRAMER_SVG },
-	{ id: "react-hook-form", label: "React-Hook-Form", icon: REACT_HOOK_FORM_PNG },
-	{ id: "react-query", label: "TanStack-Query", icon: REACT_QUERY },
 	{ id: "konva", label: "Konva.js", icon: KONVA_PNG },
 	{ id: "three", label: "Three.js", icon: THREE_SVG },
 	{ id: "dnd-kit", label: "Dnd kit", icon: DNDKIT_PNG },
@@ -65,20 +82,17 @@ export const techSkills = [
 	{ id: "i18next", label: "i18next", icon: I18NEXT },
 	{ id: "next-intl", label: "Next-Intl", icon: NEXT_INTL_PNG },
 
-	{ id: "redux", label: "Redux", icon: REDUX_SVG },
-	{ id: "rtk-query", label: "RTK Query", icon: REDUX_SVG },
-	// { id: "valtio", label: "Valtio", icon: "" },
-	{ id: "zustand", label: "Zustand", icon: ZUSTAND_PNG },
-
 	{ id: "git", label: "Git", icon: GIT_SVG },
 	{ id: "github", label: "Github", icon: GITHUB_SVG },
 	{ id: "bitbucket", label: "Bitbucket", icon: BITBUCKET_SVG },
 	{ id: "jira", label: "Jira", icon: JIRA_SVG },
+	{ id: "drone-ci", label: "DroneCI", icon: DRONE_CI_PNG },
 
 	{ id: "postman", label: "Postman", icon: POSTMAN_SVG },
 	{ id: "express", label: "Express.js", icon: EXPRESS_PNG },
 	{ id: "sqlite", label: "SQLite", icon: SQLITE_PNG },
 	{ id: "mysql", label: "MySQL", icon: MYSQL_SVG },
+	{ id: "postgresql", label: "PostgreSQL", icon: POSTGRESQL_SVG },
 	{ id: "firebase", label: "Firebase", icon: FIREBASE_SVG },
 	{ id: "supabase", label: "Supabase", icon: SUPABASE_SVG },
 
