@@ -4,11 +4,15 @@ import { ProductOutlined } from "@ant-design/icons"
 import { ConfigProvider, FloatButton } from "antd"
 import dynamic from "next/dynamic"
 import { useRouter } from "next/navigation"
-import { useState } from "react"
+import { useRef, useState } from "react"
+import { useClickAway } from "react-use"
 
 const _FloatBtn = () => {
+	const floatBtnRef = useRef<HTMLDivElement>(null)
+
 	const [open, setOpen] = useState(false)
 	const [primaryTooltip, setPrimaryTooltip] = useState("Open Menu")
+
 	const router = useRouter()
 	const isZh = window.location.pathname.startsWith("/zh")
 	const isEn = window.location.pathname.startsWith("/en")
@@ -18,8 +22,12 @@ const _FloatBtn = () => {
 		setPrimaryTooltip(`${open ? "Open" : "Close"} Menu`)
 	}
 
+	useClickAway(floatBtnRef, () => {
+		setOpen(false)
+	})
+
 	return (
-		<>
+		<div ref={floatBtnRef}>
 			<ConfigProvider
 				theme={{
 					token: {
@@ -57,7 +65,7 @@ const _FloatBtn = () => {
 					<FloatButton.BackTop visibilityHeight={0} tooltip="Back to Top" />
 				</FloatButton.Group>
 			</ConfigProvider>
-		</>
+		</div>
 	)
 }
 
