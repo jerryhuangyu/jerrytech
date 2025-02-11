@@ -3,7 +3,7 @@
     "sectionTitle": {
       "home": "Home",
       "about": "About",
-      "skillset": "Skillset",
+      "skillset": "Tech Stack",
       "experience": "Experience",
       "project": "Project"
     },
@@ -12,12 +12,12 @@
       "title2": "A front-end developer",
       "intro": "I'm passionate about creating experiences that are easy to use, accessible, and that meet the user's needs."
     },
-    "about": "A developer based in Taiwan with experience in web applications, AVMR, robot control, and point cloud applications. I specialize in building web applications using component-based architecture (React.js) and am currently exploring Next.js development. During my master's degree studies, I worked on diverse projects that revealed my passion for creative problem-solving. This journey sparked my love for transforming ideas into practical applications and cemented my commitment to a career in software development.",
+    "about": "A developer with broad experience in cross-platform development, including web, mobile, and interactive AVMR experiences. Currently focused on building maintainable, user-friendly web applications using React.js and Next.js. I’m passionate about exploring new technologies and always eager to learn and adapt quickly to new challenges. My research during my master’s degree in extended reality really fueled my interest in turning innovative ideas into practical solutions, and solidified my commitment to a career in software development.",
     "experiences": {
       "four": {
         "timestamp": "Apr 2024 - Present",
         "title": "FARobot, Inc - Senior Frontend Developer",
-        "detail": "Actively participated in the gradual refactoring of existing projects to a component-based architecture while developing key features: interactive canvas for map editing, undo functionality, no-code task management and dispatch system, monitoring dashboard, E2E testing infrastructure, HTTP server architecture improvements, and streamlined property editing through card and form systems.",
+        "detail": "Actively involved in gradually refactoring existing projects into a component-based architecture. Developed several key features, including: interactive canvas for map editing, undo functionality, no-code task system, monitoring dashboard, E2E testing infrastructure, HTTP server architecture improvements, and streamlined property editing through form systems.",
         "skills": {
           "1": "Undo/Redo",
           "2": "Konva",
@@ -79,13 +79,28 @@
         "description": "The perfect place to learn more about me.",
         "projectImage": "/projects/home_preview.webp"
       },
+      "robot-hq": {
+        "name": "Robot HQ - Route Editor",
+        "skills": {
+          "1": "React",
+          "2": "Undo",
+          "3": "Canvas",
+          "4": "Zustand",
+          "5": "Shortcut"
+        },
+        "demo": "https://robothq.vercel.app/canvas/route",
+        "source": "https://github.com/jerryhuangyu/RobotHQ",
+        "description": "A route planning tool with support for editing undo and keyboard shortcuts",
+        "projectImage": "/projects/robot-hq-preview.webp"
+      },
       "lazymit": {
         "name": "Lazymit",
         "skills": {
           "1": "React",
           "2": "Ink",
           "3": "Package",
-          "4": "AI"
+          "4": "AI",
+          "5": "CLI"
         },
         "demo": "https://www.npmjs.com/package/lazymit",
         "source": "https://github.com/jerryhuangyu/lazymit",

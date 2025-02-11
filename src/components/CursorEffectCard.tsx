@@ -1,6 +1,6 @@
 "use client"
 import { type ReactNode, useRef } from "react"
-import { useMouse } from "react-use"
+import useMouseAndScroll from "../hooks/mouse"
 import { cn } from "../lib/class-name"
 import ClientIconLink from "./icons/ClientIconLink"
 
@@ -29,7 +29,7 @@ export const CursorEffectCard = ({
 	focus?: boolean
 }) => {
 	const ref = useRef(null)
-	const mouse = useMouse(ref)
+	const mouse = useMouseAndScroll(ref)
 
 	return (
 		<div

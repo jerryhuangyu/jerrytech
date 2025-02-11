@@ -12,7 +12,7 @@
       "title2": "A front-end developer",
       "intro": "熱衷於創造易於使用、無障礙且滿足使用者需求的體驗。"
     },
-    "about": "一位居住在台灣的開發人員，擁有開發網頁應用、AVMR、機器人控制及點雲應用的經驗。目前主要使用 Component-based 架構開發網頁應用（React.js），近期亦嘗試使用 Next.js 進行開發。熱衷於探索不同的程式語言和框架，具備在有限時間內學習並應用的能力，能快速適應新的任務和需求。碩士班期間加入專精於延展實境應用的實驗室，因此接觸到多樣化的應用開發，這段經歷讓我愛上了將想法轉化為實際應用的過程，成為我決心投身軟體開發的契機。",
+    "about": "居住在台灣的開發者，擁有豐富的跨平台開發經驗包括網頁與行動應用、AVMR 互動體驗。目前專注於使用 React.js、Next.js 以 Component-based 架構開發網頁應用，提供易於維護且使用者友善的解決方案。熱衷於探索不同的程式語言和框架，具備在有限時間內學習並應用的能力，能快速適應新的任務和需求。碩士班期間加入專精於延展實境應用的實驗室，因此接觸到多樣化的應用開發，這段經歷讓我愛上了將想法轉化為實際應用的過程，成為我決心投身軟體開發的契機。",
     "experiences": {
       "four": {
         "timestamp": "Apr 2024 - Present",
@@ -77,13 +77,28 @@
         "description": "瞭解我的小地方",
         "projectImage": "/projects/home_preview.webp"
       },
+      "robot-hq": {
+        "name": "Robot HQ - 路網編輯",
+        "skills": {
+          "1": "React",
+          "2": "Undo",
+          "3": "Canvas",
+          "4": "Zustand",
+          "5": "Shortcut"
+        },
+        "demo": "https://robothq.vercel.app/canvas/route",
+        "source": "https://github.com/jerryhuangyu/RobotHQ",
+        "description": "路網規劃工具，支援編輯還原、快捷鍵功能",
+        "projectImage": "/projects/robot-hq-preview.webp"
+      },
       "lazymit": {
         "name": "Lazymit",
         "skills": {
           "1": "React",
           "2": "Ink",
           "3": "套件",
-          "4": "AI"
+          "4": "AI",
+          "5": "CLI"
         },
         "demo": "https://www.npmjs.com/package/lazymit",
         "source": "https://github.com/jerryhuangyu/lazymit",
