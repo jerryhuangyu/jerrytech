@@ -77,13 +77,28 @@
         "description": "瞭解我的小地方",
         "projectImage": "/projects/home_preview.webp"
       },
+      "robot-hq": {
+        "name": "Robot HQ - 路網編輯",
+        "skills": {
+          "1": "React",
+          "2": "Undo",
+          "3": "Canvas",
+          "4": "Zustand",
+          "5": "Shortcut"
+        },
+        "demo": "https://robothq.vercel.app/canvas/route",
+        "source": "https://github.com/jerryhuangyu/RobotHQ",
+        "description": "路網規劃工具，支援編輯還原、快捷鍵功能",
+        "projectImage": "/projects/robot-hq-preview.webp"
+      },
       "lazymit": {
         "name": "Lazymit",
         "skills": {
           "1": "React",
           "2": "Ink",
           "3": "套件",
-          "4": "AI"
+          "4": "AI",
+          "5": "CLI"
         },
         "demo": "https://www.npmjs.com/package/lazymit",
         "source": "https://github.com/jerryhuangyu/lazymit",

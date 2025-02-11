@@ -79,13 +79,28 @@
         "description": "The perfect place to learn more about me.",
         "projectImage": "/projects/home_preview.webp"
       },
+      "robot-hq": {
+        "name": "Robot HQ - Route Editor",
+        "skills": {
+          "1": "React",
+          "2": "Undo",
+          "3": "Canvas",
+          "4": "Zustand",
+          "5": "Shortcut"
+        },
+        "demo": "https://robothq.vercel.app/canvas/route",
+        "source": "https://github.com/jerryhuangyu/RobotHQ",
+        "description": "A route planning tool with support for editing undo and keyboard shortcuts",
+        "projectImage": "/projects/robot-hq-preview.webp"
+      },
       "lazymit": {
         "name": "Lazymit",
         "skills": {
           "1": "React",
           "2": "Ink",
           "3": "Package",
-          "4": "AI"
+          "4": "AI",
+          "5": "CLI"
         },
         "demo": "https://www.npmjs.com/package/lazymit",
         "source": "https://github.com/jerryhuangyu/lazymit",
