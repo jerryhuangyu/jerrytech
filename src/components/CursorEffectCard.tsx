@@ -58,9 +58,9 @@ export const CursorEffectCard = ({
 					background: "linear-gradient(135deg, #3BC4F2, #7A69F9,#F26378,#F5833F)",
 				}}
 			/>
-			<div className="absolute inset-px rounded-[19px] bg-neutral-100/80 dark:bg-neutral-900/80" />
+			<div className="absolute inset-px rounded-[19px] bg-neutral-900/80" />
 			{children && (
-				<div className="gird relative h-40 place-content-center overflow-hidden rounded-[15px] border-white bg-white/70 dark:border-neutral-950 dark:bg-black/50 brightness-50 group-hover:brightness-75 duration-200">
+				<div className="gird relative h-40 place-content-center overflow-hidden rounded-[15px] border-neutral-950 bg-black/50 brightness-50 group-hover:brightness-75 duration-200">
 					{children}
 				</div>
 			)}
@@ -74,10 +74,7 @@ export const CursorEffectCard = ({
 					</div>
 				)}
 				<h3
-					className={cn(
-						"font-semibold text-lg text-neutral-800 dark:text-neutral-300",
-						focus && "text-purple-600 dark:text-purple-400",
-					)}
+					className={cn("font-semibold text-lg text-neutral-300", focus && "text-purple-400")}
 					style={{
 						textShadow: focus ? "3px 1px 6px #7A69F9" : "3px 1px 6px #000000",
 					}}
@@ -91,7 +88,7 @@ export const CursorEffectCard = ({
 						</p>
 					))}
 				</div>
-				<p className="mt-2 text-neutral-600 dark:text-neutral-400">{description}</p>
+				<p className="mt-2 text-neutral-400">{description}</p>
 			</div>
 		</div>
 	)
