@@ -36,13 +36,13 @@
       "enabled": true,
       "semicolons": "asNeeded",
       "quoteStyle": "double",
-      "indentStyle": "tab",
+      "indentStyle": "space",
       "lineWidth": 120,
       "lineEnding": "lf",
       "bracketSpacing": true,
       "jsxQuoteStyle": "double",
       "arrowParentheses": "asNeeded",
-      "indentWidth": 4
+      "indentWidth": 2
     }
   },
   "json": {
