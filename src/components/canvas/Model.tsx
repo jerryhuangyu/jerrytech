@@ -1,6 +1,6 @@
 "use client"
 
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
+import { OrbitControls, useGLTF } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import React from "react"
 
@@ -15,7 +15,7 @@ const Model = ({ path }: ModelProps) => {
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={0.7} />
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
-      <primitive object={model.scene} scale={8} position={[0, -1.6, 0]} rotation={[-0.03, -5, 0.1]} />
+      <primitive object={model.scene} scale={7.75} position={[0.3, -1.5, 0]} rotation={[-0.03, -4.988, 0.1]} />
     </mesh>
   )
 }
@@ -34,13 +34,12 @@ const ModelCanvas = ({ children }: ModelCanvasProps) => (
   >
     <OrbitControls
       autoRotate
-      autoRotateSpeed={0.3}
+      autoRotateSpeed={0.4}
       enableZoom={false}
       maxPolarAngle={Math.PI / 2}
       minPolarAngle={Math.PI / 2}
     />
     {children}
-    <Preload all />
   </Canvas>
 )
 
