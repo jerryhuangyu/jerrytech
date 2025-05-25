@@ -93,6 +93,18 @@
         "description": "A route planning tool with support for editing undo and keyboard shortcuts",
         "projectImage": "/projects/robot-hq-preview.webp"
       },
+      "blog": {
+        "name": "Personal Blog",
+         "skills": {
+          "1": "React",
+          "2": "Docusaurus",
+          "3": "MDX"
+        },
+        "demo": "https://huang-yu.vercel.app/blog",
+        "source": "",
+        "description": "A place to share my thoughts and experiences.",
+        "projectImage": "/projects/huang-yu-blog.webp"
+      },
       "lazymit": {
         "name": "Lazymit",
         "skills": {

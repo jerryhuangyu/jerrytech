@@ -64,7 +64,7 @@
     },
     "projects": {
       "portfolio": {
-        "name": "個人網站",
+        "name": "Personal Portfolio",
         "skills": {
           "1": "Next.js",
           "2": "Tailwindcss",
@@ -90,6 +90,18 @@
         "source": "https://github.com/jerryhuangyu/RobotHQ",
         "description": "路網規劃工具，支援編輯還原、快捷鍵功能",
         "projectImage": "/projects/robot-hq-preview.webp"
+      },
+      "blog": {
+        "name": "Personal Blog",
+        "skills": {
+          "1": "React",
+          "2": "Docusaurus",
+          "3": "MDX"
+        },
+        "demo": "https://huang-yu.vercel.app/blog",
+        "source": "https://github.com/jerryhuangyu/RobotHQ",
+        "description": "個人部落格，分享我的開發經驗和學習筆記",
+        "projectImage": "/projects/huang-yu-blog.webp"
       },
       "lazymit": {
         "name": "Lazymit",
