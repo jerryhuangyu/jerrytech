@@ -3,54 +3,64 @@ import { About, Experience, Footer, Hero, Navbar, Projects, Skillset } from "@/s
 import { HOME_SECTIONS } from "@/types"
 import { useTranslations } from "next-intl"
 import { BsSuitcase } from "react-icons/bs"
+import { GrArticle } from "react-icons/gr"
 import { MdOutlineCases } from "react-icons/md"
 import { PiLightbulb } from "react-icons/pi"
 import { RiHome5Line } from "react-icons/ri"
 
+const BLOG_URL = "https://huang-yu.vercel.app/blog"
+
 export default function Home() {
-	const t = useTranslations()
-	const home = t("Index.sectionTitle.home")
-	const about = t("Index.sectionTitle.about")
-	const experience = t("Index.sectionTitle.experience")
-	const project = t("Index.sectionTitle.project")
+  const t = useTranslations()
+  const home = t("Index.sectionTitle.home")
+  const about = t("Index.sectionTitle.about")
+  const experience = t("Index.sectionTitle.experience")
+  const project = t("Index.sectionTitle.project")
+  const blog = t("Index.sectionTitle.blog")
 
-	const NavbarButtons = [
-		{
-			title: home,
-			to: `#${home.toLowerCase()}`,
-			sectionKey: HOME_SECTIONS.HOME,
-			icon: <RiHome5Line />,
-		},
-		{
-			title: about,
-			to: `#${about.toLowerCase()}`,
-			sectionKey: HOME_SECTIONS.ABOUT,
-			icon: <PiLightbulb />,
-		},
-		{
-			title: experience,
-			to: `#${experience.toLowerCase()}`,
-			sectionKey: HOME_SECTIONS.EXPERIENCE,
-			icon: <BsSuitcase />,
-		},
-		{
-			title: project,
-			to: `#${project.toLowerCase()}`,
-			sectionKey: HOME_SECTIONS.PROJECT,
-			icon: <MdOutlineCases />,
-		},
-	]
+  const NavbarButtons = [
+    {
+      title: home,
+      to: `#${home.toLowerCase()}`,
+      sectionKey: HOME_SECTIONS.HOME,
+      icon: <RiHome5Line />,
+    },
+    {
+      title: about,
+      to: `#${about.toLowerCase()}`,
+      sectionKey: HOME_SECTIONS.ABOUT,
+      icon: <PiLightbulb />,
+    },
+    {
+      title: experience,
+      to: `#${experience.toLowerCase()}`,
+      sectionKey: HOME_SECTIONS.EXPERIENCE,
+      icon: <BsSuitcase />,
+    },
+    {
+      title: project,
+      to: `#${project.toLowerCase()}`,
+      sectionKey: HOME_SECTIONS.PROJECT,
+      icon: <MdOutlineCases />,
+    },
+    {
+      title: blog,
+      to: BLOG_URL,
+      sectionKey: HOME_SECTIONS.BLOG,
+      icon: <GrArticle />,
+    },
+  ]
 
-	return (
-		<main className="flex min-h-screen select-none flex-col items-center justify-around">
-			<Navbar buttons={NavbarButtons} />
-			<Hero />
-			<About />
-			<Skillset />
-			<Experience />
-			<Projects />
-			<Footer />
-			<FloatBtn />
-		</main>
-	)
+  return (
+    <main className="flex min-h-screen select-none flex-col items-center justify-around">
+      <Navbar buttons={NavbarButtons} />
+      <Hero />
+      <About />
+      <Skillset />
+      <Experience />
+      <Projects />
+      <Footer />
+      <FloatBtn />
+    </main>
+  )
 }

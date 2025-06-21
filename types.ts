@@ -18,5 +18,6 @@ export enum HOME_SECTIONS {
   HOME = 'home',
   ABOUT = 'about',
   EXPERIENCE = 'experience',
-  PROJECT = 'project'
+  PROJECT = 'project',
+  BLOG = 'blog',
 }
