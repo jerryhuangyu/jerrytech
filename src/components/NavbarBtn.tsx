@@ -23,16 +23,13 @@ const NavbarBtn = ({ to, name, sectionKey, icon }: NavbarBtnProps) => {
   }
 
   return (
-    <span
+    <button
       className={`my-[1.5px] flex cursor-pointer items-center justify-center gap-[6px] rounded-xl py-1 pl-2 pr-3 duration-300 ${toggleSection === sectionKey && "bg-zinc-600/60"}`}
       onClick={handleClick}
-      onKeyDown={e => {
-        if (e.key === "Enter" || e.key === " ") handleClick()
-      }}
     >
       <div className="text-primary brightness-75">{icon}</div>
-      <button className="select-none text-sm text-primary">{name}</button>
-    </span>
+      <span className="select-none text-sm text-primary">{name}</span>
+    </button>
   )
 }
 export default NavbarBtn
