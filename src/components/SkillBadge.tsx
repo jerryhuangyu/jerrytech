@@ -1,19 +1,20 @@
-'use client';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+"use client"
+import { motion } from "framer-motion"
+import { useState } from "react"
+import { cn } from "../lib/class-name"
 
 type SkillBadgeProps = {
-  skill: string;
-  highlight?: boolean;
-  animate?: boolean;
-};
+  skill: string
+  highlight?: boolean
+  animate?: boolean
+}
 
 const SkillBadge = ({ skill, highlight, animate = true }: SkillBadgeProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false)
   const themeStyle =
     highlight || isHovered
-      ? 'border-[#C785EC] bg-[#3D2853] text-[#C785EC]'
-      : 'border-[#333333] bg-[#232323] text-[#b9b9b9]';
+      ? "border-purple-300 dark:border-[#C785EC] bg-purple-200 dark:bg-[#3D2853] text-purple-600 dark:text-[#C785EC]"
+      : "border-zinc-200/70 dark:border-[#333333] bg-zinc-50 dark:bg-[#232323] text-primary dark:text-[#b9b9b9]"
 
   return (
     <motion.div
@@ -24,11 +25,11 @@ const SkillBadge = ({ skill, highlight, animate = true }: SkillBadgeProps) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <p
-        className={`text-nowrap rounded-sm border-[1px] px-2 py-1 text-center text-sm font-light ${themeStyle}`}
+        className={cn("text-sm font-light text-center text-nowrap", "rounded-sm border-[1px]", "px-2 py-1", themeStyle)}
       >
         {skill}
       </p>
     </motion.div>
-  );
-};
-export default SkillBadge;
+  )
+}
+export default SkillBadge

@@ -24,7 +24,6 @@ const Projects = () => {
               { href: project.demo, icon: link },
               ...(project.source !== "" ? [{ href: project.source, icon: github }] : []),
             ]}
-            withArrow
             focus={index === 1}
             className="min-w-full flex-1 flex-col md:min-w-[40%] md:max-w-[49.6%]"
           >

@@ -5,6 +5,7 @@ import type { HOME_SECTIONS } from "@/types"
 import { useRouter } from "next/navigation"
 import React from "react"
 import { useSnapshot } from "valtio"
+import { cn } from "../lib/class-name"
 
 type NavbarBtnProps = {
   to: string
@@ -24,11 +25,18 @@ const NavbarBtn = ({ to, name, sectionKey, icon }: NavbarBtnProps) => {
 
   return (
     <button
-      className={`my-[1.5px] flex cursor-pointer items-center justify-center gap-[6px] rounded-xl py-1 pl-2 pr-3 duration-300 ${toggleSection === sectionKey && "bg-zinc-600/60"}`}
+      className={cn(
+        "flex items-center justify-center",
+        "my-[1.5px] py-1 pl-2 pr-3 gap-[6px]",
+        "rounded-xl",
+        "cursor-pointer duration-300",
+        "text-primary dark:text-primary-dark",
+        toggleSection === sectionKey && "bg-purple-400/60 dark:bg-zinc-600/60",
+      )}
       onClick={handleClick}
     >
-      <div className="text-primary brightness-75">{icon}</div>
-      <span className="select-none text-sm text-primary">{name}</span>
+      <span className="brightness-75">{icon}</span>
+      <span className="select-none text-sm">{name}</span>
     </button>
   )
 }
