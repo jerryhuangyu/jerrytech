@@ -1,5 +1,6 @@
 import BITBUCKET_SVG from "./bitbucket.svg"
 import CSS_SVG from "./css.svg"
+import CYPRESS_DARK_SVG from "./cypress-dark.svg"
 import CYPRESS_SVG from "./cypress.svg"
 import DNDKIT_PNG from "./dnd-kit.png"
 import DRIVER_SVG from "./driver.svg"
@@ -7,11 +8,14 @@ import DRONE_CI_PNG from "./drone-ci.png"
 import EXPO_PNG from "./expo.png"
 import EXPRESS_PNG from "./express.png"
 import FIREBASE_SVG from "./firebase.svg"
+import FRAMER_DARK_SVG from "./framer-dark.svg"
 import FRAMER_SVG from "./framer.svg"
 import GIT_SVG from "./git.svg"
+import GITHUB_DARK_SVG from "./github-dark.svg"
 import GITHUB_SVG from "./github.svg"
 import HTML_SVG from "./html.svg"
 import I18NEXT from "./i18next.svg"
+import JIRA_DARK_SVG from "./jira-dark.svg"
 import JIRA_SVG from "./jira.svg"
 import JS_SVG from "./js.svg"
 import KONVA_PNG from "./konva.png"
@@ -19,6 +23,7 @@ import MUI_SVG from "./mui.svg"
 import MYSQL_SVG from "./mysql.svg"
 import NEOVIM_SVG from "./neovim.svg"
 import NEXT_INTL_PNG from "./next-intl.png"
+import NEXTJS_DARK_SVG from "./nextjs-dark.svg"
 import NEXTJS_SVG from "./nextjs.svg"
 import POSTGRESQL_SVG from "./postgresql.svg"
 import POSTMAN_SVG from "./postman.svg"
@@ -30,6 +35,7 @@ import RSBUILD_PNG from "./rsbuild.png"
 import SQLITE_PNG from "./sqlite.png"
 import SUPABASE_SVG from "./supabase.svg"
 import TAILWINDCSS_SVG from "./tailwindcss.svg"
+import THREE_DARK_SVG from "./three-dark.svg"
 import THREE_SVG from "./three.svg"
 import TS_SVG from "./ts.svg"
 import VIM_SVG from "./vim.svg"
@@ -46,11 +52,14 @@ export {
 	EXPRESS_PNG,
 	FIREBASE_SVG,
 	FRAMER_SVG,
+	FRAMER_DARK_SVG,
 	GIT_SVG,
 	GITHUB_SVG,
+	GITHUB_DARK_SVG,
 	HTML_SVG,
 	I18NEXT,
 	JIRA_SVG,
+	JIRA_DARK_SVG,
 	JS_SVG,
 	KONVA_PNG,
 	MUI_SVG,
@@ -58,6 +67,7 @@ export {
 	NEOVIM_SVG,
 	NEXT_INTL_PNG,
 	NEXTJS_SVG,
+	NEXTJS_DARK_SVG,
 	POSTMAN_SVG,
 	REACT_HOOK_FORM_PNG,
 	REACT_QUERY,
@@ -67,11 +77,13 @@ export {
 	SUPABASE_SVG,
 	TAILWINDCSS_SVG,
 	THREE_SVG,
+	THREE_DARK_SVG,
 	TS_SVG,
 	VIM_SVG,
 	ZUSTAND_PNG,
 	POSTGRESQL_SVG,
 	CYPRESS_SVG,
+	CYPRESS_DARK_SVG,
 	VITEST_SVG,
 	DRONE_CI_PNG,
 	VITE_SVG,

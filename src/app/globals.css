@@ -54,7 +54,7 @@
 }
 
 .section-wrap {
-	@apply mx-6 md:max-w-3xl xl:max-w-4xl;
+	@apply mx-6 md:max-w-3xl xl:max-w-4xl w-full;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
