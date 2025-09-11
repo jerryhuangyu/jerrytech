@@ -1,4 +1,4 @@
-import HeroAsset from "@/src/components/HeroAsset"
+import HeroAsset from "@/src/components/HeroAssetDynamic"
 import { useTranslations } from "next-intl"
 
 const Hero = () => {
