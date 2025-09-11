@@ -11,7 +11,7 @@ const _FloatBtn = () => {
 	const floatBtnRef = useRef<HTMLDivElement>(null)
 
 	const [open, setOpen] = useState(false)
-	const [primaryTooltip, setPrimaryTooltip] = useState("Open Menu")
+	// const [primaryTooltip, setPrimaryTooltip] = useState("Open Menu")
 
 	const router = useRouter()
 	const isZh = window.location.pathname.startsWith("/zh")
@@ -19,7 +19,7 @@ const _FloatBtn = () => {
 
 	const handleOnclick = () => {
 		setOpen(pre => !pre)
-		setPrimaryTooltip(`${open ? "Open" : "Close"} Menu`)
+		// setPrimaryTooltip(`${open ? "Open" : "Close"} Menu`)
 	}
 
 	useClickAway(floatBtnRef, () => {
@@ -40,14 +40,15 @@ const _FloatBtn = () => {
 				<FloatButton.Group
 					type="primary"
 					trigger="click"
-					tooltip={primaryTooltip}
+					// tooltip={primaryTooltip}
 					open={open}
 					onClick={handleOnclick}
-					style={{ right: 24 }}
+					style={{ right: 24, bottom: 24 }}
 					icon={<ProductOutlined />}
 				>
 					{isEn && (
 						<FloatButton
+							shape='circle'
 							tooltip="切換至中文"
 							description="繁"
 							style={{ fontWeight: "bold" }}
@@ -56,13 +57,14 @@ const _FloatBtn = () => {
 					)}
 					{isZh && (
 						<FloatButton
+							shape='circle'
 							tooltip="Select English"
 							description="EN"
 							style={{}}
 							onClick={() => router.replace("/en")}
 						/>
 					)}
-					<FloatButton.BackTop visibilityHeight={0} tooltip="Back to Top" />
+					<FloatButton.BackTop shape='circle' visibilityHeight={0} tooltip="Back to Top" />
 				</FloatButton.Group>
 			</ConfigProvider>
 		</div>

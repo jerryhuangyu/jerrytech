@@ -5,12 +5,16 @@ import ig from "@/public/icons//ig.svg"
 import linkedin from "@/public/icons//linkedin.svg"
 import {
   BITBUCKET_SVG,
+  CSHARP_SVG,
   CSS_SVG,
   CYPRESS_DARK_SVG,
   CYPRESS_SVG,
   DNDKIT_PNG,
+  DOCKER_SVG,
+  DOTNET_SVG,
   DRIVER_SVG,
   DRONE_CI_PNG,
+  EF_PNG,
   EXPO_PNG,
   EXPRESS_PNG,
   FIREBASE_SVG,
@@ -18,6 +22,7 @@ import {
   FRAMER_SVG,
   GITHUB_DARK_SVG,
   GITHUB_SVG,
+  GITLAB_CICD_SVG,
   GIT_SVG,
   HTML_SVG,
   I18NEXT,
@@ -33,6 +38,7 @@ import {
   NEXT_INTL_PNG,
   POSTGRESQL_SVG,
   POSTMAN_SVG,
+  RABBITMQ_SVG,
   REACT_HOOK_FORM_PNG,
   REACT_QUERY,
   REACT_SVG,
@@ -144,14 +150,32 @@ export const techSkills = [
   { id: "jira", label: "Jira", icon: JIRA_SVG, dark: false },
   { id: "jira-dark", label: "Jira", icon: JIRA_DARK_SVG, dark: true },
 
+  { id: "docker", label: "Docker", icon: DOCKER_SVG, dark: false },
+  { id: "docker-dark", label: "Docker", icon: DOCKER_SVG, dark: true },
+
+  { id: "docker-compose", label: "Docker-Compose", icon: DOCKER_SVG, dark: false },
+  { id: "docker-compose-dark", label: "Docker-Compose", icon: DOCKER_SVG, dark: true },
+
   { id: "drone-ci", label: "DroneCI", icon: DRONE_CI_PNG, dark: false },
   { id: "drone-ci-dark", label: "DroneCI", icon: DRONE_CI_PNG, dark: true },
+
+  { id: "gitlab-ci", label: "GitLab CI/CD", icon: GITLAB_CICD_SVG, dark: false },
+  { id: "gitlab-ci-dark", label: "GitLab CI/CD", icon: GITLAB_CICD_SVG, dark: true },
 
   { id: "postman", label: "Postman", icon: POSTMAN_SVG, dark: false },
   { id: "postman-dark", label: "Postman", icon: POSTMAN_SVG, dark: true },
 
   { id: "express", label: "Express.js", icon: EXPRESS_PNG, dark: false },
   { id: "express-dark", label: "Express.js", icon: EXPRESS_PNG, dark: true },
+
+  { id: "csharp", label: "C#", icon: CSHARP_SVG, dark: false },
+  { id: "csharp-dark", label: "C#", icon: CSHARP_SVG, dark: true },
+
+  { id: "dotnet", label: ".NET", icon: DOTNET_SVG, dark: false },
+  { id: "dotnet-dark", label: ".NET", icon: DOTNET_SVG, dark: true },
+
+  { id: "ef-core", label: "Entity Framework", icon: EF_PNG, dark: false },
+  { id: "ef-core-dark", label: "Entity Framework", icon: EF_PNG, dark: true },
 
   { id: "sqlite", label: "SQLite", icon: SQLITE_PNG, dark: false },
   { id: "sqlite-dark", label: "SQLite", icon: SQLITE_PNG, dark: true },
@@ -161,6 +185,9 @@ export const techSkills = [
 
   { id: "postgresql", label: "PostgreSQL", icon: POSTGRESQL_SVG, dark: false },
   { id: "postgresql-dark", label: "PostgreSQL", icon: POSTGRESQL_SVG, dark: true },
+
+  { id: "rabbitmq", label: "RabbitMQ", icon: RABBITMQ_SVG, dark: false },
+  { id: "rabbitmq-dark", label: "RabbitMQ", icon: RABBITMQ_SVG, dark: true },
 
   { id: "firebase", label: "Firebase", icon: FIREBASE_SVG, dark: false },
   { id: "firebase-dark", label: "Firebase", icon: FIREBASE_SVG, dark: true },

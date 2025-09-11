@@ -29,22 +29,23 @@ const DndSkill = ({ label, id, src, isHover = false }: DndSkillProps) => {
         touchAction: "none",
       }}
       className={cn(
-        "flex flex-col items-center",
+        "flex flex-col items-center justify-center",
         "rounded-sm border-[1px] border-zinc-100 dark:border-[#333333] shadow-xs",
         "bg-zinc-50 dark:bg-[#232323] text-secondary dark:text-secondary-dark",
-        "min-w-12 min-h-12",
+        "min-w-12 min-h-12 lg:min-w-15 lg:min-h-15",
         "px-2 pt-2 pb-[1px]",
         isHovered && "border-purple-300 dark:border-purple-300 bg-purple-200 dark:bg-purple-950",
         isHovered && "text-purple-500 dark:text-purple-300",
+        isHovered && "z-50",
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onDragEnd={() => setIsHovered(false)}
     >
-      <div className="size-5">
+      <div className="size-5 lg:size-6.5">
         <Image alt={label} src={src} style={{ maxWidth: "100%", height: "auto" }} />
       </div>
-      <p className="text-nowrap text-center text-[9px] font-light mt-[2px]">{label}</p>
+      <p className="text-nowrap text-center text-[9px] lg:text-[10px] font-light mt-[2px]">{label}</p>
     </div>
   )
 }

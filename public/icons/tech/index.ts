@@ -42,6 +42,12 @@ import VIM_SVG from "./vim.svg"
 import VITE_SVG from "./vite.svg"
 import VITEST_SVG from "./vitest.svg"
 import ZUSTAND_PNG from "./zustand.png"
+import GITLAB_CICD_SVG from "./gitlab-ci.svg"
+import DOCKER_SVG from "./docker.svg"
+import CSHARP_SVG from "./csharp.svg"
+import DOTNET_SVG from "./dotnet.svg"
+import EF_PNG from "./entity-framework.png"
+import RABBITMQ_SVG from "./rabbitmq.svg"
 
 export {
 	BITBUCKET_SVG,
@@ -88,4 +94,10 @@ export {
 	DRONE_CI_PNG,
 	VITE_SVG,
 	RSBUILD_PNG,
+	GITLAB_CICD_SVG,
+	DOCKER_SVG,
+	CSHARP_SVG,
+	DOTNET_SVG,
+	EF_PNG,
+	RABBITMQ_SVG
 }
