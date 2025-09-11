@@ -48,7 +48,7 @@ const _FloatBtn = () => {
 				>
 					{isEn && (
 						<FloatButton
-							shape='circle'
+							shape='square'
 							tooltip="切換至中文"
 							description="繁"
 							style={{ fontWeight: "bold" }}
@@ -57,14 +57,14 @@ const _FloatBtn = () => {
 					)}
 					{isZh && (
 						<FloatButton
-							shape='circle'
+							shape='square'
 							tooltip="Select English"
 							description="EN"
 							style={{}}
 							onClick={() => router.replace("/en")}
 						/>
 					)}
-					<FloatButton.BackTop shape='circle' visibilityHeight={0} tooltip="Back to Top" />
+					<FloatButton.BackTop shape='square' visibilityHeight={0} tooltip="Back to Top" />
 				</FloatButton.Group>
 			</ConfigProvider>
 		</div>
