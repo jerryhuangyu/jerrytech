@@ -9,13 +9,11 @@ import React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
   title: webMeta.title,
   description: webMeta.description,
   openGraph: {
     title: webMeta.title,
     description: webMeta.description,
-    url: "https://jerrytech.vercel.app/",
     siteName: "jerrytech",
     images: [
       {
