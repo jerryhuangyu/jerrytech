@@ -21,6 +21,7 @@ const DndSkill = ({ label, id, src, isHover = false }: DndSkillProps) => {
     <div
       {...attributes}
       {...listeners}
+      aria-describedby={label}
       ref={setNodeRef}
       style={{
         transform: CSS.Translate.toString(transform),
