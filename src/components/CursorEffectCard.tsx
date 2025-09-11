@@ -1,4 +1,5 @@
 "use client"
+
 import { type ReactNode, useRef } from "react"
 import useMouseAndScroll from "../hooks/mouse"
 import { cn } from "../lib/class-name"
@@ -26,7 +27,7 @@ export const CursorEffectCard = ({
   className?: string
   focus?: boolean
 }) => {
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement>(null)
   const mouse = useMouseAndScroll(ref)
 
   return (
@@ -39,7 +40,7 @@ export const CursorEffectCard = ({
         if (!window) return
         window.open(links[0].href, "_blank")?.focus()
       }}
-      onKeyDown={() => {}}
+      onKeyDown={() => { }}
       ref={ref}
     >
       <div

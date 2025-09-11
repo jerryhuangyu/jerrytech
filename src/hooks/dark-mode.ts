@@ -4,6 +4,10 @@ function getSnapshot() {
   return window.matchMedia('(prefers-color-scheme: dark)').matches;
 }
 
+function getServerSnapshot() {
+  return false;
+}
+
 function subscribe(callback: () => void) {
   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
   mediaQuery.addEventListener('change', callback);
@@ -12,6 +16,6 @@ function subscribe(callback: () => void) {
 
 export function usePrefersDarkMode() {
   return typeof window !== 'undefined'
-    ? useSyncExternalStore(subscribe, getSnapshot)
+    ? useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
     : false;
 }

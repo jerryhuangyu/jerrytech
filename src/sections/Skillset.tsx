@@ -1,10 +1,6 @@
 import SectionTitle from "@/src/components/SectionTitle"
 import { useTranslations } from "next-intl"
-import dynamic from "next/dynamic"
-
-const DndSkills = dynamic(() => import("../components/dnd/DndSkills"), {
-  ssr: false,
-})
+import DndSkills from "../components/dnd/DndSkills"
 
 const Skillset = () => {
   const t = useTranslations("Index")

@@ -1,8 +1,9 @@
 type ProjectDetailsProps = {
-  params: { name: string };
+  params: Promise<{ name: string }>;
 };
 
-const ProjectDetails = ({ params }: ProjectDetailsProps) => {
-  return <div>Details of project: {params.name}</div>;
+const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
+  const { name } = await params;
+  return <div>Details of project: {name}</div>;
 };
 export default ProjectDetails;

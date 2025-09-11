@@ -14,7 +14,7 @@ interface MouseState {
 	scrollY: number
 }
 
-const useMouseAndScroll = (ref: React.RefObject<Element>) => {
+const useMouseAndScroll = (ref: React.RefObject<Element | null> ) => {
 	const [state, setState] = useRafState<MouseState>({
 		docX: 0,
 		docY: 0,
@@ -35,6 +35,7 @@ const useMouseAndScroll = (ref: React.RefObject<Element>) => {
 	const _prevElY = useRef<number>(0)
 
 	const updateMousePosition = (event: MouseEvent) => {
+		if (!ref?.current) return
 		if (ref.current && typeof window !== "undefined") {
 			const { left, top, width: elW, height: elH } = ref.current.getBoundingClientRect()
 			const posX = left + window.scrollX
