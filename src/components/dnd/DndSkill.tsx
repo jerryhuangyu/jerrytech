@@ -43,7 +43,7 @@ const DndSkill = ({ label, id, src, isHover = false }: DndSkillProps) => {
       onDragEnd={() => setIsHovered(false)}
     >
       <div className="size-5 lg:size-6.5">
-        <Image alt={label} src={src} style={{ maxWidth: "100%", height: "auto" }} />
+        <Image alt={label + " image"} src={src} style={{ maxWidth: "100%", height: "auto" }} />
       </div>
       <p className="text-nowrap text-center text-[9px] lg:text-[10px] font-light mt-[2px]">{label}</p>
     </div>
