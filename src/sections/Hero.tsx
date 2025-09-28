@@ -1,4 +1,4 @@
-import HeroAsset from "@/src/components/HeroAssetDynamic"
+import HeroAsset from "@/src/components/HeroAsset"
 import TypingText from "@/src/components/TypingText"
 import { useTranslations } from "next-intl"
 
