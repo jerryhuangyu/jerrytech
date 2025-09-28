@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "organizeImports": {
-    "enabled": true
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "linter": {
     "enabled": true,
@@ -17,7 +21,8 @@
       "correctness": {
         "useExhaustiveDependencies": "off",
         "noUnusedVariables": "warn",
-        "noUnusedImports": "warn"
+        "noUnusedImports": "warn",
+        "useUniqueElementIds": "off"
       },
       "style": {
         "noNegationElse": "warn",
@@ -25,8 +30,15 @@
       },
       "suspicious": {
         "noArrayIndexKey": "off",
-        "noConsoleLog": "warn",
-        "useAwait": "error"
+        "useAwait": "error",
+        "noConsole": {
+          "level": "warn",
+          "options": {
+            "allow": [
+              "log"
+            ]
+          }
+        }
       }
     }
   },
@@ -51,6 +63,10 @@
     }
   },
   "files": {
-    "ignore": ["node_modules/**/*", ".next/**/*"]
+    "includes": [
+      "**",
+      "!**/node_modules/**/*",
+      "!**/.next/**/*"
+    ]
   }
 }
