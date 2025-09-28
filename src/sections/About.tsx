@@ -1,6 +1,6 @@
-import SectionTitle from "@/src/components/SectionTitle"
 import { useTranslations } from "next-intl"
-import ScrollTypingWords from "../components/ScrollTypingWords"
+import ScrollTypingWords from "@/src/components/ScrollTypingWords"
+import SectionTitle from "@/src/components/SectionTitle"
 
 const About = () => {
   const t = useTranslations("Index")
@@ -8,7 +8,7 @@ const About = () => {
     <div className="section-wrap">
       <SectionTitle title={t("sectionTitle.about")} />
       <div className="text font-light text-secondary dark:text-secondary-dark brightness-110 xl:text-[17px]">
-        <ScrollTypingWords text={t("about")} />
+        <ScrollTypingWords texts={[t("about"), t("about2")]} />
       </div>
     </div>
   )

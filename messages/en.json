@@ -13,7 +13,8 @@
       "title2": "A developer",
       "intro": "I'm passionate about creating experiences that are easy to use, accessible, and that meet the user's needs."
     },
-    "about": "A developer with broad experience in cross-platform development, including web, mobile, and interactive AVMR experiences. Currently focused on building maintainable, user-friendly web applications using React.js and Next.js. I’m passionate about exploring new technologies and always eager to learn and adapt quickly to new challenges. My research during my master’s degree in extended reality really fueled my interest in turning innovative ideas into practical solutions, and solidified my commitment to a career in software development.",
+    "about": "A developer based in Taiwan. During my time in a research lab specializing in extended reality applications, I was exposed to diverse areas of application development. This experience sparked my passion for turning ideas into real-world applications and became the catalyst for my decision to pursue a career in software development.",
+    "about2": "Currently, I focus on full-stack software development and hardware-software integration applications. I'm proficient in React.js / Next.js and C# / .NET for both front-end and back-end technologies. I also have practical experience in containerization, CI/CD, automated deployment, and version control, dedicated to delivering solutions that are maintainable, scalable, and user-friendly.",
     "experiences": {
       "four": {
         "timestamp": "Apr 2024 - Present",
