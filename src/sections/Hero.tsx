@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div className="flex h-screen items-center" id="home">
-      <div className="mt-36 flex aspect-[2/1] w-screen flex-col justify-center">
+      <div className="mt-36 flex aspect-2/1 w-screen flex-col justify-center">
         <div className="mx-auto flex flex-col items-start md:gap-1 z-20 lg:gap-3">
           <h1 className="text-4xl text-primary font-extrabold dark:text-primary-dark xs:text-5xl md:text-8xl">
             {t("title1")}
