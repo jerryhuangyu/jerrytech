@@ -25,7 +25,7 @@ const Hero = () => {
               variableSpeed={{ min: 50, max: 120 }}
             />
           </p>
-          <p className="text max-w-[300px] text-start text-xs font-light text-secondary dark:text-secondary-dark xs:max-w-[350px] md:max-w-[650px] md:text-lg">
+          <p className="text max-w-75 text-start text-xs font-light text-secondary dark:text-secondary-dark xs:max-w-[350px] md:max-w-[650px] md:text-lg">
             {t("intro")}
           </p>
         </div>
