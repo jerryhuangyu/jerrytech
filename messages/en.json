@@ -11,35 +11,37 @@
     "hero": {
       "title1": "Hi, I'm Jerry.",
       "title2": "A developer",
-      "intro": "I'm passionate about creating experiences that are easy to use, accessible, and that meet the user's needs."
+      "intro": "I build reliable, scalable software by combining microservices architecture, CI/CD automation, and user-centered experiences."
     },
     "about": "A developer based in Taiwan. During my time in a research lab specializing in extended reality applications, I was exposed to diverse areas of application development. This experience sparked my passion for turning ideas into real-world applications and became the catalyst for my decision to pursue a career in software development.",
     "about2": "Currently, I focus on full-stack software development and hardware-software integration applications. I'm proficient in React.js / Next.js and C# / .NET for both front-end and back-end technologies. I also have practical experience in containerization, CI/CD, automated deployment, and version control, dedicated to delivering solutions that are maintainable, scalable, and user-friendly.",
     "experiences": {
-      "four": {
-        "timestamp": "Apr 2024 - Present",
-        "title": "FARobot, Inc - Senior Frontend Developer",
-        "detail": "Actively involved in gradually refactoring existing projects into a component-based architecture. Developed several key features, including: interactive canvas for map editing, undo functionality, no-code task system, monitoring dashboard, E2E testing infrastructure, HTTP server architecture improvements, and streamlined property editing through form systems.",
+      "five": {
+        "timestamp": "2025 - Present",
+        "title": "TAC Dynamics - Senior Software Engineer",
+        "detail": "Designed and implemented a containerized microservices deployment flow with private cloud installation and rollback mechanisms; introduced automated multi-environment deployment (Dev/Staging/Prod), shift-left testing, and measurable quality metrics; improved observability through logging best practices and resource monitoring to reduce diagnosis and recovery time; consolidated redundant services with internal gRPC and external RESTful APIs; developed a mini-warehouse order dispatch and monitoring system covering status tracking, exception handling, and inventory operations.",
         "skills": {
-          "1": "Undo/Redo",
+          "1": "Docker",
+          "2": "CI/CD",
+          "3": "gRPC",
+          "4": "RESTful API",
+          "5": "Microservices",
+          "6": "Observability"
+        }
+      },
+      "four": {
+        "timestamp": "2024 - 2025",
+        "title": "FARobot, Inc - Senior Frontend",
+        "detail": "Built a state snapshot mechanism to support operation history (Undo/Redo), and delivered an interactive canvas editor for smooth real-time map operations; established testing infrastructure from scratch and increased test coverage by 33.6%; introduced CI/CD and automated testing workflows, defined team standards, and reduced error reports by 59.2%; progressively refactored legacy jQuery code to React to reduce technical debt and improve maintainability; contributed to fleet management features including no-code task dispatching, war room systems, and streamlined card/form editing flows.",
+        "skills": {
+          "1": "React",
           "2": "Konva",
           "3": "Cypress",
           "4": "React Query",
           "5": "Zustand",
           "6": "Mui",
           "7": "React Hook Form",
-          "8": "Drone CI"
-        }
-      },
-      "three": {
-        "timestamp": "Nov 2023 - Feb 2024",
-        "title": "Republic of China Army - Infantryman",
-        "detail": "After four months of military training, I became a qualified infantryman. The training included participation in mechanical training, shooting training, shock education, bayonet techniques, and grenade throwing.",
-        "skills": {
-          "1": "清槍開始清槍蹲下",
-          "2": "站哨",
-          "3": "放行",
-          "4": "為陸軍當家"
+          "8": "CI/CD"
         }
       },
       "two": {
@@ -97,7 +99,7 @@
       },
       "blog": {
         "name": "Personal Blog",
-         "skills": {
+        "skills": {
           "1": "React",
           "2": "Docusaurus",
           "3": "MDX"
@@ -120,33 +122,6 @@
         "source": "https://github.com/jerryhuangyu/lazymit",
         "description": "Use AI to Generate Gitmoji-based Commit Messages",
         "projectImage": "/projects/lazymit_preview.webp"
-      },
-      "sinsight": {
-        "name": "S-Insight",
-        "skills": {
-          "1": "React",
-          "2": "MySQL",
-          "3": "Express",
-          "4": "OAuth",
-          "5": "RTK Query"
-        },
-        "demo": "https://stockinsight.vercel.app",
-        "source": "https://github.com/jerryhuangyu/StockAnalyze/",
-        "description": "Empower Your Investments: Track and Visualize Your Portfolio Like Never Before!",
-        "projectImage": "/projects/sinsight_preview.webp"
-      },
-      "tshirtmaker": {
-        "name": "Tshirt Maker",
-        "skills": {
-          "1": "React",
-          "2": "Framer-Motion",
-          "3": "Third-party API",
-          "4": "Three.js"
-        },
-        "demo": "https://tshirtmaker.vercel.app/",
-        "source": "https://github.com/jerryhuangyu/TShirtCustomApp",
-        "description": "Unleash your imagination and define your unique style with our t-shirt maker",
-        "projectImage": "/projects/tshirtmaker_preview.webp"
       },
       "noxgym": {
         "name": "NOXGYM",

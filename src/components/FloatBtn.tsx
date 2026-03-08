@@ -8,67 +8,68 @@ import { useRef, useState } from "react"
 import { useClickAway } from "react-use"
 
 const _FloatBtn = () => {
-	const floatBtnRef = useRef<HTMLDivElement>(null)
+  const floatBtnRef = useRef<HTMLDivElement>(null)
 
-	const [open, setOpen] = useState(false)
-	// const [primaryTooltip, setPrimaryTooltip] = useState("Open Menu")
+  const [open, setOpen] = useState(false)
+  // const [primaryTooltip, setPrimaryTooltip] = useState("Open Menu")
 
-	const router = useRouter()
-	const isZh = window.location.pathname.startsWith("/zh")
-	const isEn = window.location.pathname.startsWith("/en")
+  const router = useRouter()
+  const isZh = window.location.pathname.startsWith("/zh")
+  const isEn = window.location.pathname.startsWith("/en")
 
-	const handleOnclick = () => {
-		setOpen(pre => !pre)
-		// setPrimaryTooltip(`${open ? "Open" : "Close"} Menu`)
-	}
+  const handleOnclick = () => {
+    setOpen(pre => !pre)
+    // setPrimaryTooltip(`${open ? "Open" : "Close"} Menu`)
+  }
 
-	useClickAway(floatBtnRef, () => {
-		setOpen(false)
-	})
+  useClickAway(floatBtnRef, () => {
+    setOpen(false)
+  })
 
-	return (
-		<div ref={floatBtnRef}>
-			<ConfigProvider
-				theme={{
-					token: {
-						colorPrimary: "#C785EC",
-						colorFillContent: "#FFFFFF",
-						colorBgElevated: "#F8EFFD",
-					},
-				}}
-			>
-				<FloatButton.Group
-					type="primary"
-					trigger="click"
-					// tooltip={primaryTooltip}
-					open={open}
-					onClick={handleOnclick}
-					style={{ right: 24, bottom: 24 }}
-					icon={<ProductOutlined />}
-				>
-					{isEn && (
-						<FloatButton
-							shape='square'
-							tooltip="切換至中文"
-							description="繁"
-							style={{ fontWeight: "bold" }}
-							onClick={() => router.replace("/zh")}
-						/>
-					)}
-					{isZh && (
-						<FloatButton
-							shape='square'
-							tooltip="Select English"
-							description="EN"
-							style={{}}
-							onClick={() => router.replace("/en")}
-						/>
-					)}
-					<FloatButton.BackTop shape='square' visibilityHeight={0} tooltip="Back to Top" />
-				</FloatButton.Group>
-			</ConfigProvider>
-		</div>
-	)
+  return (
+    <div ref={floatBtnRef}>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: "#C785EC",
+            colorFillContent: "#FFFFFF",
+            colorBgElevated: "#F8EFFD",
+          },
+        }}
+      >
+        <FloatButton.Group
+          type="primary"
+          shape="circle"
+          trigger="click"
+          // tooltip={primaryTooltip}
+          open={open}
+          onClick={handleOnclick}
+          style={{ right: 24, bottom: 24 }}
+          icon={<ProductOutlined />}
+        >
+          {isEn && (
+            <FloatButton
+              shape="circle"
+              tooltip="切換至中文"
+              icon={<span style={{ fontWeight: "bold" }}>繁</span>}
+              style={{ fontWeight: "bold" }}
+              onClick={() => router.replace("/zh")}
+            />
+          )}
+          {isZh && (
+            <FloatButton
+              shape="circle"
+              tooltip="Select English"
+              icon={<span style={{ fontWeight: "bold" }}>EN</span>}
+              style={{}}
+              onClick={() => router.replace("/en")}
+            />
+          )}
+          <FloatButton.BackTop shape="circle" visibilityHeight={0} tooltip="Back to Top" />
+        </FloatButton.Group>
+      </ConfigProvider>
+    </div>
+  )
 }
 
 const FloatBtn = dynamic(() => Promise.resolve(_FloatBtn), { ssr: false })

@@ -11,33 +11,38 @@
     "hero": {
       "title1": "Hi, I'm Jerry",
       "title2": "A developer",
-      "intro": "熱衷於創造易於使用、無障礙且滿足使用者需求的體驗。"
+      "intro": "以用戶為中心的使用體驗，打造穩定且可擴展的軟體系統。"
     },
     "about": "居住在台灣的開發者。碩士班期間加入專精於延展實境應用的實驗室，因此接觸到多樣化的應用開發，這段經歷讓我愛上了將想法轉化為實際應用的過程，成為我決心投身軟體開發的契機。",
     "about2": "目前專注於全端軟體開發與軟硬體整合應用，熟悉 React.js / Next.js 與 C# / .NET 前後端技術，並具備容器化、CI/CD、自動化部署與版本管理的實務經驗，致力於打造兼具易於維護、可擴展且需求導向的解決方案。",
     "experiences": {
       "four": {
-        "timestamp": "Apr 2024 - Present",
-        "title": "法博智能移動 - Senior Frontend Developer",
-        "detail": "積極參與將現有項目逐步重構為 Component-based 架構。同時開發多項關鍵功能，包括：互動式畫布的圖資編輯、復原編輯功能、無代碼任務管理派發、戰情室系統、E2E 測試基礎建設、HTTP 伺服器架構更新，以及簡化屬性編輯流程的卡片和表單系統。",
+        "timestamp": "2025 - 在職",
+        "title": "泰科動力 - Senior Software Engineer",
+        "detail": "設計並實作微服務容器化部署流程，建立私有雲安裝與進退版機制；導入自動化流程部署至多環境（Dev/Staging/Prod），推動測試左移並量化品質指標；建立日誌最佳實踐與資源監控機制，縮短問題診斷與回復時間；整併冗餘服務，系統內部採用 gRPC、對外提供 RESTful API；開發微型倉儲訂單派發與監控系統，涵蓋狀態追蹤、異常處理與出入庫盤點。",
         "skills": {
+          "1": "Docker",
+          "2": "CI/CD",
+          "3": "gRPC",
+          "4": ".NET",
+          "5": "C#",
+          "6": "微服務",
+          "7": "可觀測性"
+        }
+      },
+      "three": {
+        "timestamp": "2024 - 2025",
+        "title": "法博智能移動 - Senior Frontend",
+        "detail": "實作狀態快照機制支援操作歷史（Undo/Redo），建置互動式畫布編輯工具以提升圖資操作體驗；從零建立測試基礎建設，將測試覆蓋率提升 33.6%；導入 CI/CD 與自動測試流程，建立團隊開發標準並降低錯誤回報量 59.2%；使用 React 漸進式重構既有 jQuery 程式碼，降低技術債並提升可維護性；參與機隊管理系統開發，涵蓋無代碼任務派發、戰情室系統、卡片與表單流程優化。",
+        "skills": {
+          "1": "React",
           "2": "Konva",
           "3": "Cypress",
           "4": "React Query",
           "5": "Zustand",
           "6": "Mui",
-          "7": "React Hook Form"
-        }
-      },
-      "three": {
-        "timestamp": "Nov 2023 - Feb 2024",
-        "title": "Republic of China Army - 步槍兵",
-        "detail": "透過四個月的部隊養成，訓練成為合格的步槍兵。其中參與機械訓練、射擊訓練、震撼教育、刺槍術、手榴彈投擲。",
-        "skills": {
-          "1": "清槍開始清槍蹲下",
-          "2": "站哨",
-          "3": "放行",
-          "4": "為陸軍當家"
+          "7": "React Hook Form",
+          "8": "CI/CD"
         }
       },
       "two": {
@@ -118,33 +123,6 @@
         "source": "https://github.com/jerryhuangyu/lazymit",
         "description": "利用 AI 產生 Gitmoji-based 的 commit 訊息",
         "projectImage": "/projects/lazymit_preview.webp"
-      },
-      "sinsight": {
-        "name": "S-Insight",
-        "skills": {
-          "1": "React",
-          "2": "MySQL",
-          "3": "Express",
-          "4": "OAuth",
-          "5": "RTK Query"
-        },
-        "demo": "https://stockinsight.vercel.app",
-        "source": "https://github.com/jerryhuangyu/StockAnalyze/",
-        "description": "追蹤您的投資組合，可視化交易紀錄",
-        "projectImage": "/projects/sinsight_preview.webp"
-      },
-      "tshirtmaker": {
-        "name": "Tshirt Maker",
-        "skills": {
-          "1": "React",
-          "2": "Framer-Motion",
-          "3": "Third-party API",
-          "4": "Three.js"
-        },
-        "demo": "https://tshirtmaker.vercel.app/",
-        "source": "https://github.com/jerryhuangyu/TShirtCustomApp",
-        "description": "釋放想像力，定義衣服的獨特風格",
-        "projectImage": "/projects/tshirtmaker_preview.webp"
       },
       "noxgym": {
         "name": "NOXGYM",
