@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Suspense, lazy } from "react"
+import { lazy, Suspense } from "react"
 import { useIsMobile } from "../hooks/device"
 
 const HeroModel = lazy(() => import("@/src/components/canvas/Model"))
@@ -14,7 +14,7 @@ const HeroImage = () => {
         priority
         quality={isDesktop() ? 100 : 4}
         alt="Jerry Huang Yu"
-        src="/author.png"
+        src="/author.jpeg"
         width={3000}
         height={462}
         style={{ objectFit: "cover", width: "auto", height: "100%" }}

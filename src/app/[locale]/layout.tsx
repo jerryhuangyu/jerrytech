@@ -1,10 +1,10 @@
-import { webMeta } from "@/src/constants/metadata"
-import { CSPostHogProvider } from "@/src/providers/CSPostHogProvider"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Script from "next/script"
 import React from "react"
+import { webMeta } from "@/src/constants/metadata"
+import { CSPostHogProvider } from "@/src/providers/CSPostHogProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: webMeta.title,
     description: webMeta.description,
-    siteName: "jerrytech",
+    siteName: "Huang Yu Personal Website",
     images: [
       {
         url: webMeta.image,
