@@ -10,8 +10,20 @@
     },
     "hero": {
       "title1": "Hi, I'm Jerry.",
-      "title2": "A developer",
-      "intro": "I build reliable, scalable software by combining microservices architecture, CI/CD automation, and user-centered experiences."
+      "title2": "Senior Software Engineer",
+      "intro": "I build reliable, scalable software by combining microservices architecture, CI/CD automation, and user-centered experiences.",
+      "techTags": [
+        "TypeScript",
+        "React",
+        "C#",
+        ".NET",
+        "CI/CD"
+      ],
+      "stats": [
+        "const experience = \"2+ years\";",
+        "const focus = [\"web\", \"robotics\", \"dev-ops\"];",
+        "const location = \"Taiwan\";"
+      ]
     },
     "about": "A developer based in Taiwan. During my time in a research lab specializing in extended reality applications, I was exposed to diverse areas of application development. This experience sparked my passion for turning ideas into real-world applications and became the catalyst for my decision to pursue a career in software development.",
     "about2": "I bring strengths in problem-solving, risk control, technical decision-making, and team influence to improve delivery quality and drive team growth. I have full-stack and cross-platform development experience across web, native, and interactive AR/VR/MR applications. Currently, I focus on full-stack software development and hardware-software integration, with proficiency in React.js / Next.js and C# / .NET across front-end and back-end development. I also have hands-on experience in containerization, CI/CD, automated deployment, and version control, delivering maintainable, scalable, and user-friendly solutions.",
