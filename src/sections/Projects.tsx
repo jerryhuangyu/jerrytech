@@ -1,33 +1,39 @@
-import github from "@/public/icons//github.svg"
+import Image from "next/image"
+import { useLocale, useMessages, useTranslations } from "next-intl"
 import link from "@/public/icons//link.svg"
 import SectionTitle from "@/src/components/SectionTitle"
-import { useMessages, useTranslations } from "next-intl"
 import { CursorEffectCard } from "../components/CursorEffectCard"
+import { mapProjects } from "../lib/projects"
+
 type IntlMessages = typeof import("@/messages/en.json")
 
 const Projects = () => {
+  const locale = useLocale()
   const t = useTranslations("Index")
   const m = useMessages() as IntlMessages
-  const projects = Object.values(m.Index.projects)
+  const projects = mapProjects(m.Index.projects)
 
   return (
     <div className="section-wrap mb-16">
       <SectionTitle title={t("sectionTitle.project")} />
-      <div className="flex flex-wrap gap-3">
+      <div className="grid gap-3 md:grid-cols-2">
         {projects.map((project, index) => (
           <CursorEffectCard
-            key={`project-${index}`}
+            key={project.slug}
             title={project.name}
-            tags={Object.values(project.skills)}
+            tags={project.skills}
             description={project.description}
-            links={[
-              { href: project.demo, icon: link },
-              ...(project.source !== "" ? [{ href: project.source, icon: github }] : []),
-            ]}
+            links={[{ href: project.demo, icon: link }]}
+            to={`/${locale}/projects/${project.slug}`}
             focus={index === 1}
-            className="min-w-full flex-1 flex-col md:min-w-[40%] md:max-w-[49.6%]"
           >
-            <img src={project.projectImage} loading="lazy" alt={project.name} className="w-full h-full object-cover" />
+            <Image
+              src={project.projectImage}
+              alt={project.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="h-full w-full object-cover"
+            />
           </CursorEffectCard>
         ))}
       </div>

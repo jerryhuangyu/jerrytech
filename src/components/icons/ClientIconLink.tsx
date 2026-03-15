@@ -1,8 +1,8 @@
 "use client"
 
-import type { BasicLink } from "@/types"
 import Image from "next/image"
 import React from "react"
+import type { BasicLink } from "@/types"
 
 type ClientIconLinkProps = BasicLink
 
@@ -12,6 +12,7 @@ const ClientIconLink = ({ icon, name, to }: ClientIconLinkProps) => {
     window.open(to, "_blank")
   }
   return (
+    // biome-ignore lint/a11y/noStaticElementInteractions: <link in button>
     <div
       onClick={onClick}
       onKeyDown={() => {}}
