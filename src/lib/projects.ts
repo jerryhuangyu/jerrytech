@@ -1,7 +1,6 @@
-import type messages from "@/messages/en.json"
+import type { AppMessages } from "@/src/i18n/types"
 
-type IntlMessages = typeof messages
-type ProjectsMap = IntlMessages["Index"]["projects"]
+type ProjectsMap = AppMessages["Index"]["projects"]
 type ProjectValue = ProjectsMap[keyof ProjectsMap]
 
 export type ProjectItem = {

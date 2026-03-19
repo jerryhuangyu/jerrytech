@@ -1,0 +1,75 @@
+{
+  "backToList": "返回列表",
+  "backHome": "回首頁",
+  "moreProjects": "更多專案",
+  "narrative": {
+    "side": {
+      "title": "專案拆解",
+      "description": "從起點、範圍、技術取捨到後續反思，整理這個 side project 是如何被定義、實作與迭代的。",
+      "sections": {
+        "motivation": {
+          "title": "起點與動機",
+          "placeholder": "[待補充] 為什麼會開始這個 side project？"
+        },
+        "target-user": {
+          "title": "目標使用者與情境",
+          "placeholder": "[待補充] 這個專案是為誰設計、在哪種情境下使用？"
+        },
+        "mvp-scope": {
+          "title": "MVP 範圍",
+          "placeholder": "[待補充] 第一版我刻意只做了哪些功能？"
+        },
+        "key-features": {
+          "title": "核心功能亮點",
+          "placeholder": "[待補充] 最值得展示的 2-3 個功能是什麼？"
+        },
+        "technical-decisions": {
+          "title": "技術決策與取捨",
+          "placeholder": "[待補充] 選型、架構與主要 trade-off 為何？"
+        },
+        "challenges": {
+          "title": "挑戰與解法",
+          "placeholder": "[待補充] 開發過程中遇到最難的問題與解法。"
+        },
+        "learning": {
+          "title": "學到的事",
+          "placeholder": "[待補充] 這個 side project 帶來哪些技術或產品思維成長？"
+        },
+        "next-step": {
+          "title": "下一步規劃",
+          "placeholder": "[待補充] 下一版最優先想補的內容是什麼？"
+        }
+      }
+    },
+    "work": {
+      "title": "工作專案拆解",
+      "description": "從業務目標、負責範圍到成果影響，整理我在這個工作專案中的角色、決策與實作脈絡。",
+      "sections": {
+        "business-problem": {
+          "title": "業務問題與目標",
+          "placeholder": "[待補充] 這個工作專案解決了什麼業務問題？"
+        },
+        "ownership": {
+          "title": "職責與 Ownership",
+          "placeholder": "[待補充] 我實際負責哪些模組與決策？"
+        },
+        "impact": {
+          "title": "成果與影響",
+          "placeholder": "[待補充] 可量化的成果數據。"
+        }
+      }
+    }
+  },
+  "content": {
+    "lazymit": {
+      "motivation": "寫提交訊息常常發生在做到一半的時候，容易把原本的節奏切斷。Lazymit 就是想把這件事變簡單一點。",
+      "target-user": "它適合習慣小步提交、又希望提交歷史還是看得懂的開發者。npm 累積 3,903 次下載，至少證明痛點不只我有。",
+      "mvp-scope": "MVP 只專注在：先選分類和範圍、根據改動產生提交訊息、預覽後再送出。",
+      "key-features": "Lazymit 加速小步提交的速度，引導遵守提交的最佳實踐，也保住訊息的可讀性與控制權。",
+      "technical-decisions": "不把穩定性押在 prompt 上，而是把責任拆開：先整理輸入、限制輸出格式，最後再用程式做補正。這樣模型只需要專心產生 message，而不是處理整個流程。",
+      "challenges": "難的不是串接模型，而是怎麼讓輸出穩定到能放進日常工作流。只要模型被要求做太多事，結果就容易發散，刻意縮小工作邊界提高 AI 的可控性。",
+      "learning": "這個專案讓我更確定一件事：AI 適合處理局部、明確、可驗證的任務；先把流程拆清楚，再把對的部分交給模型，結果才會真正可控。",
+      "next-step": "如果重新設計，我會嘗試做成編輯器 extension，讓使用情境更貼近實際開發流程。後來我也改用編輯器內建的 commit 生成功能，更凸顯開發者工具對摩擦成本有多敏感。"
+    }
+  }
+}

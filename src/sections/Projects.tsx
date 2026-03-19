@@ -1,16 +1,15 @@
 import Image from "next/image"
-import { useLocale, useMessages, useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import link from "@/public/icons//link.svg"
 import SectionTitle from "@/src/components/SectionTitle"
+import { useAppMessages } from "@/src/i18n/client"
 import { CursorEffectCard } from "../components/CursorEffectCard"
 import { mapProjects } from "../lib/projects"
-
-type IntlMessages = typeof import("@/messages/en.json")
 
 const Projects = () => {
   const locale = useLocale()
   const t = useTranslations("Index")
-  const m = useMessages() as IntlMessages
+  const m = useAppMessages()
   const projects = mapProjects(m.Index.projects)
 
   return (

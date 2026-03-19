@@ -1,0 +1,82 @@
+{
+  "portfolio": {
+    "name": "Personal Portfolio",
+    "skills": {
+      "1": "Next.js",
+      "2": "Tailwindcss",
+      "3": "Three.js",
+      "4": "Valtio",
+      "5": "TypeScript"
+    },
+    "demo": "https://jerrytech.vercel.app/",
+    "source": "https://github.com/jerryhuangyu/jerrytech",
+    "description": "瞭解我的小地方",
+    "projectImage": "/projects/home_preview.webp"
+  },
+  "robot-hq": {
+    "name": "Robot HQ - 路網編輯",
+    "skills": {
+      "1": "React",
+      "2": "Undo",
+      "3": "Canvas",
+      "4": "Zustand",
+      "5": "Shortcut"
+    },
+    "demo": "https://robothq.vercel.app/canvas/route",
+    "source": "https://github.com/jerryhuangyu/RobotHQ",
+    "description": "路網規劃工具，支援編輯還原、快捷鍵功能",
+    "projectImage": "/projects/robot-hq-preview.webp"
+  },
+  "blog": {
+    "name": "Personal Blog",
+    "skills": {
+      "1": "React",
+      "2": "Docusaurus",
+      "3": "MDX"
+    },
+    "demo": "https://huang-yu.vercel.app/blog",
+    "source": "",
+    "description": "個人部落格，分享我的開發經驗和學習筆記",
+    "projectImage": "/projects/huang-yu-blog.webp"
+  },
+  "lazymit": {
+    "name": "Lazymit",
+    "skills": {
+      "1": "React",
+      "2": "Ink",
+      "3": "Zustand",
+      "4": "LLM",
+      "5": "CLI"
+    },
+    "demo": "https://www.npmjs.com/package/lazymit",
+    "source": "https://github.com/jerryhuangyu/lazymit",
+    "description": "把 staged diff 整理成 Gitmoji commit message 的 CLI 工具",
+    "projectImage": "/projects/lazymit_preview.webp"
+  },
+  "noxgym": {
+    "name": "NOXGYM",
+    "skills": {
+      "1": "React",
+      "2": "HTML",
+      "3": "CSS",
+      "4": "TypeScript"
+    },
+    "demo": "https://noxgym.vercel.app/",
+    "source": "https://github.com/jerryhuangyu/FitnessWebPage",
+    "description": "健身革命新體驗，打造理想體態",
+    "projectImage": "/projects/noxgym_preview.webp"
+  },
+  "ubikeclone": {
+    "name": "Ubike 克隆",
+    "skills": {
+      "1": "React",
+      "2": "Axios",
+      "3": "Ant-Design",
+      "4": "Third-party API"
+    },
+    "demo": "https://you-bike-clone.vercel.app/",
+    "source": "https://github.com/jerryhuangyu/YouBikeClone",
+    "description": "借車不落人後，查詢即時 YouBike 借還站資訊",
+    "projectImage": "/projects/youbike_preview.webp"
+  }
+}

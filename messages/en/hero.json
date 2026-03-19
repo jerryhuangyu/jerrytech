@@ -1,0 +1,11 @@
+{
+  "title1": "Hi, I'm Jerry.",
+  "title2": "Senior Software Engineer",
+  "intro": "I build reliable, scalable software by combining microservices architecture, CI/CD automation, and user-centered experiences.",
+  "techTags": ["TypeScript", "React", "C#", ".NET", "CI/CD"],
+  "stats": [
+    "const experience = \"2+ years\";",
+    "const focus = [\"web\", \"robotics\", \"dev-ops\"];",
+    "const location = \"Taiwan\";"
+  ]
+}

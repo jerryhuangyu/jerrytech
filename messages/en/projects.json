@@ -1,0 +1,82 @@
+{
+  "portfolio": {
+    "name": "Portfolio",
+    "skills": {
+      "1": "Next.js",
+      "2": "Tailwindcss",
+      "3": "Three.js",
+      "4": "Valtio",
+      "5": "TypeScript"
+    },
+    "demo": "https://jerrytech.vercel.app/",
+    "source": "https://github.com/jerryhuangyu/jerrytech",
+    "description": "The perfect place to learn more about me.",
+    "projectImage": "/projects/home_preview.webp"
+  },
+  "robot-hq": {
+    "name": "Robot HQ - Route Editor",
+    "skills": {
+      "1": "React",
+      "2": "Undo",
+      "3": "Canvas",
+      "4": "Zustand",
+      "5": "Shortcut"
+    },
+    "demo": "https://robothq.vercel.app/canvas/route",
+    "source": "https://github.com/jerryhuangyu/RobotHQ",
+    "description": "A route planning tool with support for editing undo and keyboard shortcuts",
+    "projectImage": "/projects/robot-hq-preview.webp"
+  },
+  "blog": {
+    "name": "Personal Blog",
+    "skills": {
+      "1": "React",
+      "2": "Docusaurus",
+      "3": "MDX"
+    },
+    "demo": "https://huang-yu.vercel.app/blog",
+    "source": "",
+    "description": "A place to share my thoughts and experiences.",
+    "projectImage": "/projects/huang-yu-blog.webp"
+  },
+  "lazymit": {
+    "name": "Lazymit",
+    "skills": {
+      "1": "React",
+      "2": "Ink",
+      "3": "Zustand",
+      "4": "LLM",
+      "5": "CLI"
+    },
+    "demo": "https://www.npmjs.com/package/lazymit",
+    "source": "https://github.com/jerryhuangyu/lazymit",
+    "description": "A CLI tool that turns staged diffs into Gitmoji commit messages",
+    "projectImage": "/projects/lazymit_preview.webp"
+  },
+  "noxgym": {
+    "name": "NOXGYM",
+    "skills": {
+      "1": "React",
+      "2": "HTML",
+      "3": "CSS",
+      "4": "TypeScript"
+    },
+    "demo": "https://noxgym.vercel.app/",
+    "source": "https://github.com/jerryhuangyu/FitnessWebPage",
+    "description": "Transform your body with revolutionary fitness.",
+    "projectImage": "/projects/noxgym_preview.webp"
+  },
+  "ubikeclone": {
+    "name": "Ubike Clone",
+    "skills": {
+      "1": "React",
+      "2": "Axios",
+      "3": "Ant-Design",
+      "4": "Third-party API"
+    },
+    "demo": "https://you-bike-clone.vercel.app/",
+    "source": "https://github.com/jerryhuangyu/YouBikeClone",
+    "description": "A real-time YouBike station checking service for easy bike borrowing and returning.",
+    "projectImage": "/projects/youbike_preview.webp"
+  }
+}

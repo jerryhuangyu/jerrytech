@@ -2,18 +2,16 @@ import github from "@/public/icons//github.svg"
 import link from "@/public/icons//link.svg"
 import SectionTitle from "@/src/components/SectionTitle"
 import { CursorEffectCard } from "@/src/components/CursorEffectCard"
+import { getAppMessages } from "@/src/i18n/server"
 import { mapProjects } from "@/src/lib/projects"
 import Image from "next/image"
 import Link from "next/link"
-import { getLocale, getMessages, getTranslations } from "next-intl/server"
-
-type IntlMessages = typeof import("@/messages/en.json")
+import { getLocale, getTranslations } from "next-intl/server"
 
 export default async function Projects() {
   const locale = await getLocale()
   const t = await getTranslations("Index")
-  const isZh = locale === "zh"
-  const m = (await getMessages()) as IntlMessages
+  const m = await getAppMessages()
   const projects = mapProjects(m.Index.projects)
 
   return (
@@ -21,15 +19,13 @@ export default async function Projects() {
       <SectionTitle title={t("sectionTitle.project")} />
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <p className="text text-sm font-light text-secondary dark:text-secondary-dark md:text-base">
-          {isZh
-            ? "點擊卡片進入專案詳情頁，右上角圖示可直接開啟 Demo / Source。"
-            : "Click a card to view project details. Use the top-right icons for Demo / Source."}
+          {t("projectList.intro")}
         </p>
         <Link
           href={`/${locale}`}
           className="rounded border border-[#333333]/40 px-3 py-1.5 text-xs text-primary transition hover:border-[#333333] hover:bg-black/5 dark:text-primary-dark dark:hover:bg-white/5"
         >
-          {isZh ? "回首頁" : "Back Home"}
+          {t("projectList.backHome")}
         </Link>
       </div>
 

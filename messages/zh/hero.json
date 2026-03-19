@@ -1,0 +1,11 @@
+{
+  "title1": "Hi, I'm Jerry",
+  "title2": "資深軟體工程師",
+  "intro": "以用戶為中心的使用體驗，打造穩定且可擴展的軟體系統。",
+  "techTags": ["TypeScript", "React", "C#", ".NET", "CI/CD"],
+  "stats": [
+    "const experience = \"2+ years\";",
+    "const focus = [\"全端\", \"機器人\", \"開發維運\"];",
+    "const location = \"Taiwan\";"
+  ]
+}

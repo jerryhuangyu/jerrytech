@@ -1,0 +1,75 @@
+{
+  "backToList": "Back to list",
+  "backHome": "Back home",
+  "moreProjects": "More Projects",
+  "narrative": {
+    "side": {
+      "title": "Project Breakdown",
+      "description": "From motivation and scope to technical trade-offs and reflection, this section explains how the side project was defined, built, and iterated on.",
+      "sections": {
+        "motivation": {
+          "title": "Motivation",
+          "placeholder": "[TODO] Why did I start this side project?"
+        },
+        "target-user": {
+          "title": "Target User & Context",
+          "placeholder": "[TODO] Who is this for and in which usage context?"
+        },
+        "mvp-scope": {
+          "title": "MVP Scope",
+          "placeholder": "[TODO] What did I intentionally include in the first MVP?"
+        },
+        "key-features": {
+          "title": "Key Features",
+          "placeholder": "[TODO] Which 2-3 features are most worth highlighting?"
+        },
+        "technical-decisions": {
+          "title": "Technical Decisions & Trade-offs",
+          "placeholder": "[TODO] What were the key tech choices and trade-offs?"
+        },
+        "challenges": {
+          "title": "Challenges & Solutions",
+          "placeholder": "[TODO] What were the hardest problems and how were they solved?"
+        },
+        "learning": {
+          "title": "What I Learned",
+          "placeholder": "[TODO] What technical or product lessons did I gain?"
+        },
+        "next-step": {
+          "title": "Next Iteration",
+          "placeholder": "[TODO] What is the highest-priority next improvement?"
+        }
+      }
+    },
+    "work": {
+      "title": "Work Project Breakdown",
+      "description": "From business goals and ownership to measurable impact, this section outlines my role, decisions, and implementation approach in the project.",
+      "sections": {
+        "business-problem": {
+          "title": "Business Problem & Goal",
+          "placeholder": "[TODO] What business problem did this work project solve?"
+        },
+        "ownership": {
+          "title": "Ownership",
+          "placeholder": "[TODO] Which modules and decisions did I personally own?"
+        },
+        "impact": {
+          "title": "Impact",
+          "placeholder": "[TODO] What measurable impact was delivered?"
+        }
+      }
+    }
+  },
+  "content": {
+    "lazymit": {
+      "motivation": "Writing commit messages usually happens in the middle of implementation. It is a small closing step, but it can still break the flow. Lazymit was my attempt to make that interruption minimal.",
+      "target-user": "It is for developers who prefer small, frequent commits but still want their commit messages to stay readable. The 3,903 npm downloads at least suggested this pain point was not mine alone.",
+      "mvp-scope": "The MVP focused on the most common path only: generate a commit message from the staged diff, choose type and scope first, preview the result, and then commit. I deliberately did not turn it into a full Git workflow tool.",
+      "key-features": "Lazymit turns commit message generation into a staged-diff-only, previewable, user-controlled flow that keeps small commits fast without sacrificing readability.",
+      "technical-decisions": "I did not bet stability on the prompt alone. I split responsibilities across the flow: normalize the input, constrain the output format, and apply final corrections in code. That way the model only had to focus on writing the message instead of managing the whole workflow.",
+      "challenges": "The hard part was not integrating an API. It was making the output stable enough for daily use. Once the model was asked to do too much, the results started to drift, so I intentionally narrowed its job to writing the message.",
+      "learning": "This project reinforced one principle for me: AI works best on tasks that are local, explicit, and easy to verify. Once the workflow is decomposed clearly and the model only owns the right slice, the result becomes much more controllable.",
+      "next-step": "If I redesigned it, I would prioritize an editor extension so the experience fits the real development flow more naturally. I later switched to editor-built-in commit generation, which only made the lesson clearer: high-frequency tools win or lose on friction."
+    }
+  }
+}

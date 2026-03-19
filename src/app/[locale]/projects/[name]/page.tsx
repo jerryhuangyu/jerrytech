@@ -1,15 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { getMessages, getTranslations } from "next-intl/server"
+import { getTranslations } from "next-intl/server"
 import github from "@/public/icons//github.svg"
 import link from "@/public/icons//link.svg"
 import IconLink from "@/src/components/icons/IconLink"
 import SectionTitle from "@/src/components/SectionTitle"
+import { getAppMessages } from "@/src/i18n/server"
 import { getProjectSections, getProjectTemplateKind } from "@/src/lib/project-section-templates"
 import { findProject, mapProjects } from "@/src/lib/projects"
-
-type IntlMessages = typeof import("@/messages/en.json")
 
 type ProjectDetailsProps = {
   params: Promise<{ locale: string; name: string }>
@@ -18,8 +17,7 @@ type ProjectDetailsProps = {
 const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
   const { locale, name } = await params
   const t = await getTranslations("Index")
-  const isZh = locale === "zh"
-  const m = (await getMessages()) as IntlMessages
+  const m = await getAppMessages()
   const project = findProject(m.Index.projects, name)
 
   if (!project) {
@@ -27,10 +25,10 @@ const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
   }
 
   const templateKind = getProjectTemplateKind(name)
-  const detailSections = getProjectSections({
+  const detailNarrative = getProjectSections({
     slug: name,
-    locale,
     kind: templateKind,
+    projectDetail: m.Index.projectDetail,
   })
 
   const relatedProjects = mapProjects(m.Index.projects)
@@ -45,7 +43,7 @@ const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
           href={`/${locale}/projects`}
           className="rounded border border-[#333333]/40 px-3 py-1.5 text-xs text-primary transition hover:border-[#333333] hover:bg-black/5 dark:text-primary-dark dark:hover:bg-white/5"
         >
-          {isZh ? "返回列表" : "Back to list"}
+          {t("projectDetail.backToList")}
         </Link>
       </div>
 
@@ -84,22 +82,12 @@ const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
       </article>
 
       <section className="mt-8">
-        <h2 className="mb-2 text-xl font-medium text-primary dark:text-primary-dark">
-          {templateKind === "side"
-            ? isZh
-              ? "Side Project 介紹區塊"
-              : "Side Project Narrative"
-            : isZh
-              ? "工作專案介紹區塊"
-              : "Work Project Narrative"}
-        </h2>
+        <h2 className="mb-2 text-xl font-medium text-primary dark:text-primary-dark">{detailNarrative.title}</h2>
         <p className="mb-4 text-xs font-light text-secondary dark:text-secondary-dark">
-          {isZh
-            ? "此區為固定模板，先保留待補內容，後續可逐段補齊。"
-            : "Fixed template sections with placeholders for future details."}
+          {detailNarrative.description}
         </p>
         <div className="grid gap-3 md:grid-cols-2">
-          {detailSections.map(section => (
+          {detailNarrative.sections.map(section => (
             <article
               key={section.id}
               className="rounded-2xl border border-[#333333]/40 bg-linear-to-br from-[#f5f5f5] to-[#efefef] p-4 dark:from-[#202020] dark:to-[#151515]"
@@ -121,7 +109,7 @@ const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
 
       <section className="mt-8">
         <h2 className="mb-4 text-xl font-medium text-primary dark:text-primary-dark">
-          {isZh ? "更多專案" : "More Projects"}
+          {t("projectDetail.moreProjects")}
         </h2>
         <div className="grid gap-3 md:grid-cols-3">
           {relatedProjects.map(item => (
@@ -153,7 +141,7 @@ const ProjectDetails = async ({ params }: ProjectDetailsProps) => {
           href={`/${locale}`}
           className="text-sm text-secondary underline underline-offset-4 transition hover:text-primary dark:text-secondary-dark dark:hover:text-primary-dark"
         >
-          {isZh ? "回首頁" : "Back home"}
+          {t("projectDetail.backHome")}
         </Link>
       </section>
     </div>

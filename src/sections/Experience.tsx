@@ -1,13 +1,12 @@
 import ExperienceDetail from "@/src/components/ExperienceDetail"
 import SectionTitle from "@/src/components/SectionTitle"
+import { useAppMessages } from "@/src/i18n/client"
 import SpringFromLeft from "@/src/components/motions/SpringFromLeft"
-import { useMessages, useTranslations } from "next-intl"
-
-type IntlMessages = typeof import("@/messages/en.json")
+import { useTranslations } from "next-intl"
 
 const Experience = () => {
 	const t = useTranslations("Index")
-	const m = useMessages() as IntlMessages
+	const m = useAppMessages()
 	const experiences = Object.values(m.Index.experiences)
 
 	return (

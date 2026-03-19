@@ -1,0 +1,53 @@
+{
+  "four": {
+    "timestamp": "2025 - Present",
+    "title": "TAC Dynamics - Senior Software Engineer",
+    "detail": "Designed and implemented a containerized microservices deployment flow with private cloud installation and rollback mechanisms; introduced automated multi-environment deployment (Dev/Staging/Prod), shift-left testing, and measurable quality metrics; improved observability through logging best practices and resource monitoring to reduce diagnosis and recovery time; consolidated redundant services with internal gRPC and external RESTful APIs; developed a mini-warehouse order dispatch and monitoring system covering status tracking, exception handling, and inventory operations.",
+    "skills": {
+      "1": "Docker",
+      "2": "CI/CD",
+      "3": "gRPC",
+      "4": "RESTful API",
+      "5": "Microservices",
+      "6": "Observability"
+    }
+  },
+  "three": {
+    "timestamp": "2024 - 2025",
+    "title": "FARobot, Inc - Senior Frontend",
+    "detail": "Built a state snapshot mechanism to support operation history (Undo/Redo), and delivered an interactive canvas editor for smooth real-time map operations; established testing infrastructure from scratch and increased test coverage by 33.6%; introduced CI/CD and automated testing workflows, defined team standards, and reduced error reports by 59.2%; progressively refactored legacy jQuery code to React to reduce technical debt and improve maintainability; contributed to fleet management features including no-code task dispatching, war room systems, and streamlined card/form editing flows.",
+    "skills": {
+      "1": "React",
+      "2": "Konva",
+      "3": "Cypress",
+      "4": "React Query",
+      "5": "Zustand",
+      "6": "Mui",
+      "7": "React Hook Form",
+      "8": "CI/CD"
+    }
+  },
+  "two": {
+    "timestamp": "May 2022 - Jul 2023",
+    "title": "XRLab (NCKU) - Collaborative Mixed Reality System for Humans and Robots",
+    "detail": "The project is dedicated to enhancing human-robot collaboration on construction jobsites. To achieve this, the project involves developing a mobile platform with omnidirectional wheels and a mixed reality collaborative interface. The project also encompasses the development of various functionalities, such as PID control, forward and inverse kinematics calculations, navigation, ROS communication architecture, and MR interaction functionality.",
+    "skills": {
+      "1": "ROS",
+      "2": "MRTK",
+      "3": "HoloLens 2",
+      "4": "Unity"
+    }
+  },
+  "one": {
+    "timestamp": "Jan 2022 - Jan 2023",
+    "title": "XRLab (NCKU) - Advanced Intelligent Security Detection System",
+    "detail": "Collaborating with the management team, we created a solution that covers the entire process from scanning to generating reports. We used on-site point cloud and BIM information overlay and extraction, and carried out compliance checks to produce opening protection improvement reports. My role included cleaning and extracting point cloud data, identifying features, checking regulatory compliance, and developing user interfaces.",
+    "skills": {
+      "1": "BIM",
+      "2": "PCL",
+      "3": "CloudCompare",
+      "4": "BLK2GO",
+      "5": "Unity"
+    }
+  }
+}

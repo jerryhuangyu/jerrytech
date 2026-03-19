@@ -9,7 +9,7 @@
 
 - 在 [`src/sections/Hero.tsx`](../../src/sections/Hero.tsx) 導入新的 hero 版面與裝飾元素。
 - 新增 [`src/components/HeroMatrixBackground.tsx`](../../src/components/HeroMatrixBackground.tsx)，在 Hero 背後提供 matrix rain 視覺效果。
-- Hero 文案、tech tags、stats 改由 [`messages/en.json`](../../messages/en.json) 與 [`messages/zh.json`](../../messages/zh.json) 提供。
+- Hero 文案、tech tags、stats 改由 [`messages/en`](../../messages/en/index.ts) 與 [`messages/zh`](../../messages/zh/index.ts) 合併提供。
 
 這個背景效果需要同時滿足幾個條件：
 
